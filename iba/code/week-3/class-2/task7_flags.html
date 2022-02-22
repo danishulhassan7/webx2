@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<style>
+		* {
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0px;
+		}
+
 		.main {
-			
+			width: 80%;
+			margin: 0px auto;
+			margin-top: 50px;
 		}
 
 		.flag-1 {
@@ -38,7 +47,7 @@
 		.flag-2 {
 			width: 300px;
 			height: 155px;
-			background-color: transparent;			
+			background-color: transparent;
 		}
 
 
@@ -63,11 +72,11 @@
 			border-bottom-right-radius: 20px;
 			border: 1px solid black;
 		}
-		
+
 		.flag-3 {
 			width: 300px;
 			height: 155px;
-			background-color: transparent;			
+			background-color: transparent;
 		}
 
 
@@ -77,7 +86,7 @@
 			border-top-left-radius: 20px;
 			border-top-right-radius: 20px;
 			border: 1px solid black;
-			
+
 		}
 
 		.f3-clr-2 {
@@ -94,169 +103,156 @@
 			border: 1px solid black;
 		}
 
-		
 
-
+		/* Vertical flags css */
 
 		.flag-4 {
 			width: 300px;
-			height: 155px;
+			height: 165px;
 			background-color: transparent;
-			box-sizing: border-box;			
+			border: 1px solid black;
+			border-radius: 20px;
 		}
-		
-		.f4-clr-1 { 
-			display:inline-block;
-			box-sizing: border-box;	
-			width: 90px;
-			height: 155px;
+
+		.f4-clr-1 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-left-radius: 20px;
 			border-bottom-left-radius: 20px;
 			background-color: green;
-			border: 1px solid black;
 		}
 
-		.f4-clr-2 { 
-			display:inline-block;
-			width: 110px;
-			height: 155px;
+		.f4-clr-2 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			background-color: white;
 		}
 
-		.f4-clr-3 { 
-			display:inline-block;
-			width: 90px;
-			height: 155px;
+		.f4-clr-3 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-right-radius: 20px;
 			border-bottom-right-radius: 20px;
 			background-color: red;
-			border: 1px solid black;
-			box-sizing: border-box;	
 		}
 
 		.flag-5 {
 			width: 300px;
-			height: 155px;
-			background-color: transparent;
-			box-sizing: border-box;			
+			height: 165px;
+			border: 1px solid black;
+			border-radius: 20px;
 		}
-		
-		.f5-clr-1 { 
-			display:inline-block;
-			box-sizing: border-box;	
-			width: 90px;
-			height: 155px;
+
+		.f5-clr-1 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-left-radius: 20px;
 			border-bottom-left-radius: 20px;
 			background-color: black;
-			border: 1px solid black;
 		}
 
-		.f5-clr-2 { 
-			display:inline-block;
-			width: 110px;
-			height: 155px;
+		.f5-clr-2 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			background-color: yellow;
 		}
 
-		.f5-clr-3 { 
-			display:inline-block;
-			width: 90px;
-			height: 155px;
+		.f5-clr-3 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-right-radius: 20px;
 			border-bottom-right-radius: 20px;
 			background-color: red;
-			border: 1px solid red;
-			box-sizing: border-box;	
 		}
 
 		.flag-6 {
 			width: 300px;
-			height: 155px;
+			height: 165px;
 			background-color: transparent;
-			box-sizing: border-box;			
+			border: 1px solid black;
+			border-radius: 20px;
 		}
-		
-		.f6-clr-1 { 
-			display:inline-block;
-			box-sizing: border-box;	
-			width: 90px;
-			height: 155px;
+
+		.f6-clr-1 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-left-radius: 20px;
 			border-bottom-left-radius: 20px;
 			background-color: blue;
-			border: 1px solid black;
 		}
 
-		.f6-clr-2 { 
-			display:inline-block;
-			width: 110px;
-			height: 155px;
+		.f6-clr-2 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			background-color: white;
 		}
 
-		.f6-clr-3 { 
-			display:inline-block;
-			width: 90px;
-			height: 155px;
+		.f6-clr-3 {
+			display: inline-block;
+			width: 32.33%;
+			height: 163px;
 			border-top-right-radius: 20px;
 			border-bottom-right-radius: 20px;
 			background-color: red;
-			border: 1px solid red;
-			box-sizing: border-box;	
 		}
 
 		.flag-7 {
 			width: 300px;
 			height: 155px;
 			background-color: white;
-			box-sizing: border-box;	
-			border: 2px solid gray;
-			border-radius: 20px;		
+			border: 1px solid black;
+			border-radius: 20px;
 		}
-		
-		.f7-clr-1 { 
+
+		.f7-clr-1 {
 			margin: 30px auto;
 			height: 90px;
 			width: 90px;
 			background-color: maroon;
 			border-radius: 50%;
 		}
-		
+
 		.flag-8 {
 			width: 300px;
 			height: 155px;
 			background-color: white;
-			box-sizing: border-box;			
 		}
-		
-		.f8-clr-1 { 
+
+		.f8-clr-1 {
 			background-color: red;
 			border-radius: 20px;
-			border: 1px solid gray;
+			border: 1px solid black;
 		}
 
 		.flag-9 {
-			display:inline-block;
+			display: inline-block;
 			width: 300px;
-			height: 155px;
+			height: 159px;
 			background-color: white;
-			box-sizing: border-box;			
+			border: 1px solid black;
+			border-radius: 20px;
 		}
 
-		.f9-clr-1 { 
-			display:inline-block;
+		.f9-clr-1 {
+			display: inline-block;
 			width: 90px;
-			height: 155px;
+			height: 153px;
 			border-top-left-radius: 20px;
 			border-bottom-left-radius: 20px;
 			background-color: white;
-			border: 1px solid gray;
 		}
-		
-		.f9-clr-2 { 
-			display:inline-block;
-			height: 155px;
+
+		.f9-clr-2 {
+			display: inline-block;
+			height: 153px;
 			background-color: green;
 			border-top-right-radius: 20px;
 			border-bottom-right-radius: 20px;
@@ -264,113 +260,209 @@
 		}
 
 		.flag-10 {
-			display: inline-block;
 			width: 300px;
 			height: 165px;
 			background-color: transparent;
 		}
 
-		
-		.f10-clr-4 {
-			display: inline-block;
+		.f10-clr-0 {
 			height: 165px;
-			width: 50px;
-			background-color: black;
+			background-color: green;
+			width: 70px;
 			border-top-left-radius: 20px;
 			border-bottom-left-radius: 20px;
-			border: 1px solid black;
+			float: left;
 		}
 
 		.f10-clr-1 {
-			display: inline-block;
-			height: 80px;
-			width: 240px;
-			background-color: red;
+			height: 53px;
+			width: 300px;
+			background-color: black;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border: 1px solid black;
+			float: none;
 		}
-		
-		
-		
+
+		.f10-clr-2 {
+			height: 59px;
+			width: 300px;
+			background-color: red;
+			border: 1px solid black;
+			float: none;
+		}
+
+		.f10-clr-3 {
+			height: 53px;
+			width: 300px;
+			background-color: yellow;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border: 1px solid black;
+			float: none;
+		}
+
+		.flag-11 {
+			width: 300px;
+			height: 165px;
+			background-color: transparent;
+			border: 1px solid black;
+			border-radius: 20px;
+		}
+
+		.f11-clr-1 {
+			display: inline-block;
+			width: 30%;
+			height: 163px;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			background-color: maroon;
+		}
+
+		.f11-clr-2 {
+			display: inline-block;
+			width: 37%;
+			height: 163px;
+			background-color: white;
+		}
+
+		.f11-clr-3 {
+			display: inline-block;
+			width: 30%;
+			height: 163px;
+			border-top-right-radius: 20px;
+			border-bottom-right-radius: 20px;
+			background-color: maroon;
+		}
+
+		.flag-12 {
+			width: 300px;
+			height: 155px;
+			background-color: transparent;
+		}
+
+		.f12-clr-0 {
+			height: 165px;
+			background-color: green;
+			width: 70px;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			float: left;
+		}
+
+		.f12-clr-1 {
+			height: 82px;
+			width: 300px;
+			background-color: black;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+			border: 1px solid black;
+			float: none;
+		}
+
+		.f12-clr-2 {
+			height: 83px;
+			width: 300px;
+			background-color: yellow;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+			border: 1px solid black;
+			float: none;
+		}
 	</style>
 </head>
 
 <body>
 
+
 	<div class="main">
 
-	<!-- Flag 01 --> 
-	<div class="flag-1">
-		<div class="f1-clr-1"></div>
-		<div class="f1-clr-2"></div>
-		<div class="f1-clr-3"></div>
-	</div> <br><br>
+		<!-- Flag 01 -->
+		<div class="flag-1">
+			<div class="f1-clr-1"></div>
+			<div class="f1-clr-2"></div>
+			<div class="f1-clr-3"></div>
+		</div> <br><br>
 
-	<!-- Flag 02 --> 
-	<div class="flag-2">
-		<div class="f2-clr-1"></div>
-		<div class="f2-clr-2"></div>
-		<div class="f2-clr-3"></div>
-	</div> <br><br>
-
-
-	<!-- Flag 03 --> 
-	<div class="flag-3">
-		<div class="f3-clr-1"></div>
-		<div class="f3-clr-2"></div>
-		<div class="f3-clr-3"></div>
-	</div> <br><br>
-
-	
-	<!-- Flag 04 --> 
-	<div class="flag-4">
-		<div class="f4-clr-1"></div>
-		<div class="f4-clr-2"></div>
-		<div class="f4-clr-3"></div>
-	</div> <br><br>
-
-	<!-- Flag 05 --> 
-	<div class="flag-5">
-		<div class="f5-clr-1"></div>
-		<div class="f5-clr-2"></div>
-		<div class="f5-clr-3"></div>
-	</div> <br><br>
+		<!-- Flag 02 -->
+		<div class="flag-2">
+			<div class="f2-clr-1"></div>
+			<div class="f2-clr-2"></div>
+			<div class="f2-clr-3"></div>
+		</div> <br><br>
 
 
-	<!-- Flag 06 --> 
-	<div class="flag-6">
-		<div class="f6-clr-1"></div>
-		<div class="f6-clr-2"></div>
-		<div class="f6-clr-3"></div>
-	</div> <br><br>
-
-	<!-- Flag 07 --> 
-	<div class="flag-7">
-		<div class="f7-clr-1"></div>
-	</div> <br><br>
-
-	
-	<!-- Flag 08 --> 
-	<div class="flag-8">
-		<div class="f8-clr-1"> <img src="images/turkey.png" height="155px"> </div>
-	</div> <br><br>
+		<!-- Flag 03 -->
+		<div class="flag-3">
+			<div class="f3-clr-1"></div>
+			<div class="f3-clr-2"></div>
+			<div class="f3-clr-3"></div>
+		</div> <br><br>
 
 
-	<!-- Flag 09 --> 
-	<div class="flag-9">
-		<div class="f9-clr-1"></div>
-		<div class="f9-clr-2"> <img src="images/pak.png" height="155px" width="200px"></div>
-	</div> <br><br>
+		<!-- Flag 04 -->
+		<div class="flag-4">
+			<span class="f4-clr-1"></span>
+			<span class="f4-clr-2"></span>
+			<span class="f4-clr-3"></span>
+		</div> <br><br>
 
-	<!-- Flag 10 --> 
-	<div class="flag-10">
-		<span class="f10-clr-4"></span>
-		<span class="f10-clr-1"></span>
-		<span class="f10-clr-2"></span>
-		<span class="f10-clr-3"></span>
-	</div> <br><br>
-	
+		<!-- Flag 05 -->
+		<div class="flag-5">
+			<span class="f5-clr-1"></span>
+			<span class="f5-clr-2"></span>
+			<span class="f5-clr-3"></span>
+		</div> <br><br>
 
 
-	
+		<!-- Flag 06 -->
+		<div class="flag-6">
+			<span class="f6-clr-1"></span>
+			<span class="f6-clr-2"></span>
+			<span class="f6-clr-3"></span>
+		</div> <br><br>
+
+		<!-- Flag 07 -->
+		<div class="flag-7">
+			<div class="f7-clr-1"></div>
+		</div> <br><br>
+
+
+		<!-- Flag 08 -->
+		<div class="flag-8">
+			<div class="f8-clr-1"> <img src="images/turkey.png" height="155px"> </div>
+		</div> <br><br>
+
+
+		<!-- Flag 09 -->
+		<div class="flag-9">
+			<div class="f9-clr-1"></div>
+			<div class="f9-clr-2"> <img src="images/pak.png" height="151px" width="201px"></div>
+		</div> <br><br>
+
+		<!-- Flag 10 -->
+		<div class="flag-10">
+			<span class="f10-clr-0"></span>
+			<div class="f10-clr-1"></div>
+			<div class="f10-clr-2"></div>
+			<div class="f10-clr-3"></div>
+		</div> <br><br>
+
+		<!-- Flag 11 -->
+		<div class="flag-11">
+			<span class="f11-clr-1"></span>
+			<span class="f11-clr-2"></span>
+			<span class="f11-clr-3"></span>
+		</div> <br><br>
+
+		<!-- Flag 12 -->
+		<div class="flag-12">
+			<span class="f12-clr-0"></span>
+			<div class="f12-clr-1"></div>
+			<div class="f12-clr-2"></div>
+		</div> <br><br>
+
+
 	</div>
 
 </body>
