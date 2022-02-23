@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LabTask 07 - Tables </title>
+    <style>
+        body {
+            background-color: #87b7fa;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        #sch {
+            width: 80%;
+            margin: 0px auto;            
+            font-family: calibri;
+            border: 3px solid blueviolet;
+        }
+
+        th {
+            background-color: aqua;
+            padding: 10px 20px;
+            font-size: 22px;
+        }
+
+        td {
+            background-color: aquamarine;
+            border-style: dotted;
+            border-color: gray;
+            padding: 10px 20px;
+        }
+        .t-foot {
+            background-color: lightseagreen;
+            font-size: 22px;
+        }
+        .btn-div {
+            width: 80%;
+            margin: 0px auto;            font-family: calibri;
+        }
+        .btn {
+            text-align: center;
+            background-color: aqua;
+            font-weight: bold;
+            font-family: calibri;
+            font-size: 22px;
+            padding: 12px;
+            margin-top: 20px;
+            border: 3px solid blueviolet;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="color: purple; text-align: center;">LabTask 07 - (a)</h1>
+
+        <table id="sch" border="1" cellpadding="1px" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Quality</th>
+                    <th>Product Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>1</b></td>
+                    <td>Wheat</td>
+                    <td>Good</td>
+                    <td>200 Bags</td>
+                </tr>
+
+                <tr>
+                    <td><b>2</b></td>
+                    <td>Rice</td>
+                    <td>Best</td>
+                    <td>250 Bags</td>
+                </tr>
+
+                <tr>
+                    <td><b>3</b></td>
+                    <td>Sugar</td>
+                    <td>Poor</td>
+                    <td>175 Bags</td>
+                </tr>
+
+                <tr>
+                    <td><b>4</b></td>
+                    <td>Milk</td>
+                    <td>Best</td>
+                    <td>180 Bags</td>
+                </tr>
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="t-foot">
+                        <center> <b>Monthly Data</b></center>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="btn-div">
+            <button class="btn">Remove Table Class</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
