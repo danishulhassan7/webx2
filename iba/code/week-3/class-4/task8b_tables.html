@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LabTask 08 - Tables </title>
+    <style>
+        body {
+            background-color: lightblue;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        #tab {
+            width: 90%;
+            margin: 0px auto;
+            font-family: calibri;
+            border: 1px solid black;
+        }
+
+
+
+        #tab th {
+            padding: 10px 20px;
+            font-size: 22px;
+        }
+
+        #tab tr {
+            line-height: 1.7;
+        }
+
+        #tab td {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 10px 6px;
+        }
+
+        .t-foot {
+            background-color: lightseagreen;
+            font-size: 22px;
+        }
+
+        .timeday {
+            background-color: lightgray;
+        }
+
+        .days {
+            background-color: lightcyan;
+        }
+        .time {
+            background-color: purple;
+            color: white;
+        }
+        .free {
+            background-color: aquamarine;
+        }
+        .ell4 {
+            background-color: red;
+        }
+        .ell6 {
+            background-color: yellow;
+        }
+        .ell7 {
+            background-color: lightgreen;
+        }
+        .region {
+            background-color: blueviolet;
+        }
+        .health {
+            background-color: brown;
+        }
+        .blackspace {
+            background-color: black;
+        }
+        .info {
+            background-color: springgreen;
+        }
+        .elldev {
+            background-color: burlywood;
+        }
+        .bridge {
+            background-color: navy;
+        }
+        .space {
+            background-color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="color: purple; text-align: center;">LabTask 08 - (b)</h1>
+
+        <table id="tab" border="1" cellpadding="1px" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th class="timeday">Time/Day</th>
+                    <th class="days">Monday</th>
+                    <th class="days">Tuesday</th>
+                    <th class="days">Wednesday</th>
+                    <th class="days">Thursday</th>
+                    <th class="timeday">Time/Day</th>
+                    <th class="days">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time">8.04 - 8.14</td>
+                    <td class="free" colspan="4">Free Time</td>
+                    <td class="time">8.04 - 8.14</td>
+                    <td class="free">Free Time</td>
+                </tr>
+
+                <tr>
+                    <td class="time">8.16 - 8.58</td>
+                    <td class="ell4">ELL 4/5</td>
+                    <td class="ell4">ELL 4/5</td>
+                    <td class="ell4">ELL 4/5</td>
+                    <td class="ell4">ELL 4/5</td>
+                    <td class="time">8.17 - 8.55</td>
+                    <td class="ell4">ELL 4/5</td>
+                </tr>
+
+                <tr>
+                    <td class="time">9.01 - 9.43</td>
+                    <td class="ell6">ELL 6</td>
+                    <td class="ell6">ELL 6</td>
+                    <td class="ell6">ELL 6</td>
+                    <td class="ell6">ELL 6</td>
+                    <td class="time">8.58 - 9.35</td>
+                    <td class="ell6">ELL 6</td>
+                </tr>
+
+                <tr>
+                    <td class="time">9.45 - 10.26</td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="time">9.15 - 9.59</td>
+                    <td class="space"></td>
+                </tr>
+
+                <tr>
+                    <td class="time">10.45 - 11.26</td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="space"></td>
+                    <td class="ell7">ELL 7</td>
+                    <td class="space"></td>
+                    <td class="time">10.15 - 11.59</td>
+                    <td class="health">Health 8</td>
+                </tr>
+
+                <tr>
+                    <td class="time">11.04 - 11.14</td>
+                    <td colspan="4" style="background-color: fuchsia;">Lunch Time</td>
+                    <td class="time">11.04 - 11.14</td>
+                    <td class="ell7">ELL7</td>
+                </tr>
+
+                <tr>
+                    <td class="time">9.45 - 10.26</td>
+                    <td class="region">Region 8</td>
+                    <td class="health">Health 8</td>
+                    <td class="region">Region 8</td>
+                    <td class="health">Health 8</td>
+                    <td class="time">9.15 - 9.59</td>
+                    <td class="health">Health 8</td>
+                </tr>
+
+                <tr>
+                    <td class="time">9.45 - 10.26</td>
+                    <td class="region">Region 8</td>
+                    <td class="health">Health 8</td>
+                    <td class="region">Region 8</td>
+                    <td class="health">Health 8</td>
+                    <td colspan="2" class="blackspace"></td>
+                </tr>
+
+
+                <tr>
+                    <td class="time">9.45 - 10.26</td>
+                    <td class="info">Info Pro 8/9</td>
+                    <td class="bridge">ELL Bridging</td>
+                    <td class="info">Info Pro 8/9</td>
+                    <td class="bridge">ELL Bridging</td>
+                    <td colspan="2" class="blackspace"></td>
+                </tr>
+
+                <tr>
+                    <td class="time">9.45 - 10.26</td>
+                    <td class="info">Info Pro 8/9</td>
+                    <td class="elldev">ELL Developing</td>
+                    <td class="info">Info Pro 8/9</td>
+                    <td class="elldev">ELL Developing</td>
+                    <td colspan="2" class="blackspace"></td>
+                </tr>
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7" class="t-foot">
+                        <center> <b>Data</b></center>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LabTask 08 - Tables </title>
+    <style>
+        body {
+            background-color: lightblue;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0px 20px;
+        }
+
+        #tab {
+            width: 95%;
+            margin: 0px auto;
+            table-layout: fixed;
+            font-family: calibri;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+
+
+        #tab th {
+            padding: 10px 20px;
+            box-sizing: border-box;
+            font-size: 22px;
+            border: 5px solid white;
+        }
+
+        #tab tr {
+            line-height: 1.7;
+            border-bottom: 10px solid white;
+            border-left: 1px solid white;
+        }
+
+        #tab td {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 20px 10px;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+        }
+
+
+        #tab thead tr:nth-child(1) {
+            background-color: lightgray;
+        }
+
+        #tab tbody tr:nth-child(1) {
+            background-color:lightseagreen ;
+        }
+        #tab tbody tr:nth-child(4) {
+            background-color:lightseagreen ;
+        }
+        #tab tbody tr:nth-child(3) {
+            background-color:lightgreen ;
+        }
+        .green {
+            background-color: lightgreen;
+        }
+        .hotpink {
+            background-color: hotpink;
+        }
+        .cyan {
+            background-color: cyan;
+        }
+        .seagreen {
+            background-color: lightseagreen;
+        }
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="color: purple; text-align: center;">LabTask 08 - (a)</h1>
+
+        <table id="tab" border="1" cellpadding="1px" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td class="green">Lane Swim <br> 6.30 - 10.30</td>
+                    <td class="green">Lane Swim <br> 6.30 - 10.30</td>
+                </tr>
+
+                <tr>
+                    <td style="background-color: lightpink;">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="hotpink">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="cyan">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="hotpink">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="cyan">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="orange">Lane Swim <br> 6.30 - 10.30</td>
+                    <td class="seagreen">Lane Swim <br> 6.30 - 10.30</td>
+                </tr>
+
+                <tr>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td class="hotpink">Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td class="hotpink">Lane Swim <br> 6.30 - 10.30</td>
+                    <td class="hotpink">Lane Swim <br> 6.30 - 10.30</td>
+                </tr>
+
+                <tr>
+                    <td class="cyan">Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td>Public Swim <br> 6.30 - 10.30</td>
+                    <td class="cyan">Public Swim <br> 6.30 - 10.30</td>
+                    <td class="orange">Public Swim <br> 6.30 - 10.30</td>
+                    <td>Lane Swim <br> 6.30 - 10.30</td>
+                    <td>Lane Swim <br> 6.30 - 10.30</td>
+                </tr>
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="7" style="background-color: yellow !important;">
+                        <center> <b>Data</b></center>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>

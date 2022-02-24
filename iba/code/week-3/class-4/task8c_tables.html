@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> LabTask 08 - Tables </title>
+    <style>
+        body {
+            background-color: lightblue;
+            width: 80%;
+            margin: 0px auto;
+        }
+
+        #tab {
+            width: 98%;
+            table-layout: fixed;
+            margin: 0px auto;
+            font-family: calibri;
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+
+        #tab th {
+            color: black;
+            background-color: white;
+            padding: 10px 6px;
+            font-size: 22px;
+        }
+
+        #tab tr {
+            line-height: 1.7;
+        }
+
+        #tab td {
+            font-size: 15px;
+            padding: 10px 0px;
+        }
+
+        .t-foot {
+            font-size: 22px;
+        }
+
+        .left-col {
+            color: white !important;
+            background-color: purple !important;
+        }
+
+        .last-col {
+            background-color: mediumpurple;
+        }
+
+        .snack {
+            background-color: lightpink;
+        }
+        .circle {
+            background-color: lightskyblue;
+        }
+        .playground {
+            background-color: lightsalmon;
+        }
+        .sand {
+            background-color: lightgoldenrodyellow;
+        }
+        .curri {
+            background-color: lightslategray;
+        }
+        .town {
+            background-color: orchid;
+        }
+        .lunch {
+            background-color: cornflowerblue;
+        }
+        .music {
+            background-color: bisque;
+        }
+        .arabic {
+            background-color: cadetblue;
+        }
+        .french {
+            background-color: olivedrab;
+        }
+        .waterplay {
+            background-color: red;
+        }
+
+        tfoot {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="color: purple; text-align: center;">LabTask 08 - (c)</h1>
+
+        <table id="tab" border="1" cellpadding="1px" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr>
+                    <td colspan="10"
+                        style="color: white; background-color: purple; font-weight:bold; font-size: 36px; font-family:calibri;">
+                        <img src="logo.png" width="75px" height="75px" style="border-radius:50px;"> Sample Foundation
+                        Data <img src="logo.png" width="75px" height="75px" style="border-radius:50px;"> </td>
+                </tr>
+                <tr>
+                    <th class="left-col">TIMES</th>
+                    <th>8.30</th>
+                    <th>9.00</th>
+                    <th>9.30</th>
+                    <th>10.00</th>
+                    <th>10.30</th>
+                    <th>11.00</th>
+                    <th>11.30</th>
+                    <th>12.00</th>
+                    <th>12.30</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="left-col"><b>SUNDAY</b></td>
+                    <td class="last-col">Registration</td>
+                    <td class="circle">Circle Time</td>
+                    <td class="playground">Big Playground</td>
+                    <td class="music">Music</td>
+                    <td class="snack">Snack</td>
+                    <td class="curri">Curricular Activity</td>
+                    <td style="background-color: lightgreen;">Library</td>
+                    <td class="lunch">Lunch</td>
+                    <td class="last-col">Story Time / Show <br> and Tell</td>
+                </tr>
+
+                <tr>
+                    <td class="left-col"><b>MONDAY</b></td>
+                    <td class="last-col">Registration</td>
+                    <td class="circle">Circle Time</td>
+                    <td class="french">French</td>
+                    <td class="curri">Curricular Activity</td>
+                    <td class="snack">Snack</td>
+                    <td class="music">Music</td>
+                    <td class="arabic">Arabic</td>
+                    <td class="lunch">Lunch</td>
+                    <td class="last-col">Story Time / Show <br> and Tell</td>
+                </tr>
+
+                <tr>
+                    <td class="left-col"><b>TUESDAY</b></td>
+                    <td class="last-col">Registration</td>
+                    <td colspan="2" style="background-color:yellowgreen">Swimming</td>
+                    <td class="waterplay">Water Play</td>
+                    <td class="snack">Snack</td>
+                    <td class="french">French</td>
+                    <td class="sand">Kiddie Gym</td>
+                    <td class="lunch">Lunch</td>
+                    <td class="last-col">Story Time / Show <br> and Tell</td>
+                </tr>
+
+                <tr>
+                    <td class="left-col"><b>WEDNESDAY</b></td>
+                    <td class="last-col">Registration</td>
+                    <td class="circle">Circle Time</td>
+                    <td class="playground">Big Playground</td>
+                    <td class="town">Tiny Town</td>
+                    <td class="snack">Snack</td>
+                    <td class="curri">Curricular Activity</td>
+                    <td class="waterplay">Water Play</td>
+                    <td class="lunch">Lunch</td>
+                    <td class="last-col">Story Time / Show <br> and Tell</td>
+                </tr>
+
+                <tr>
+                    <td class="left-col"><b>THURSDAY</b></td>
+                    <td class="last-col">Registration</td>
+                    <td class="circle">Circle Time</td>
+                    <td class="sand">Sand</td>
+                    <td class="french">French</td>
+                    <td class="snack">Snack</td>
+                    <td class="town">Tiny Town</td>
+                    <td class="arabic">Arabic</td>
+                    <td class="lunch">Lunch</td>
+                    <td class="last-col">Story Time / Show <br> and Tell</td>
+                </tr>
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="10" class="t-foot">
+                        <center> <b>Data</b></center>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>
