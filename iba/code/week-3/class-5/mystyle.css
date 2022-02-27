@@ -1,7 +1,21 @@
+body {
+    width: 75%;
+    margin: 0 auto;
+    font-family: calibri;
+    background-color: lightblue;
+}
+.main {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: lightcyan;
+}
 h1
 {
 background-color:blue;
 color: white; 
+padding: 8px;
+border: 3px solid lightseagreen;
+border-radius: 18px;
 }
 
 p 
