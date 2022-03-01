@@ -1,0 +1,68 @@
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: calibri;	
+    font-size: 18px;
+}
+.main {
+}
+
+.header {
+    background-color:lightgray;
+    height: 95px;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top:0;	
+}
+.list1, .list2, .list3 {
+    color: black;
+    list-style: none;
+}
+.list1 li, .list2 li, .list3 li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 14px 8px;	
+    font-size: 20px;
+}
+
+.list2 li a {
+	color: #0062ff;
+	text-decoration: none;
+}
+.list2 li a:hover {
+	border-bottom: 4px solid blue;
+	padding: 10px 0px;
+	padding-bottom:30px;
+        color: blue;
+	cursor: pointer;
+}
+.icon {
+    height: 40px;
+    width: 40px
+}
+.left {
+   width:500px;
+   float: left;
+   padding-left:50px;
+}
+
+.mid {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.right {
+   width:300px;
+   float:right;
+
+}
+
+/* CRICINGIF */
+
+.main2 {
+   padding-top: 250px;
+}
+

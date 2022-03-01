@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning HTML Forms</title>
+    <style>
+        body {
+            background-color: lightblue;
+            background-image: url('https://media.istockphoto.com/photos/abstract-background-green-picture-id621484894?b=1&k=20&m=621484894&s=170667a&w=0&h=N5jh9me3fiSjYCMol3moBu3enlQzNgrwG1GXX5N4uhA=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: calibri;
+            font-weight: bold;
+        }
+
+        .main {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form {
+            background-color: purple;
+            color: white;
+            border-radius: 30px;
+            padding: 20px;
+            padding-bottom: 50px;
+
+        }
+
+        input[type='text'],
+        input[type='email'],
+        input[type='password'],
+        input[type='number'],
+        input[type='date'],
+        input[type='file'],
+        input[type='select'],
+        input[type='url'],
+        input[type='month'],
+        input[type='datetime-local'],
+        input[type='range'],
+        input[type='search'],
+        input[type='tel'],
+        input[type='time'],
+        input[type='week'],
+        select {
+            width: 320px;
+            height: 50px;
+            font-size: 18px;
+            font-family: calibri;
+            border-radius: 30px;
+            border: 2px solid black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        input[type='color'] {
+            width: 180px;
+            height: 50px;
+            font-size: 18px;
+            font-family: calibri;
+            border-radius: 30px;
+            border: 2px solid white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        input[type='radio'],
+        input[type='checkbox'] {
+            width: 30px;
+            height: 18px;
+            font-size: 18px;
+            font-family: calibri;
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        b {
+            font-size: 20px;
+            display: inline-block;
+            width: 140px;
+        }
+
+        .widthh {
+            width: 370px;
+            padding: 8px;
+        }
+
+        textarea {
+            border: none;
+            font-size: 18px;
+            font-family: calibri;
+            border-radius: 30px;
+            border: 2px solid black;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            margin-top: 30px;
+        }
+
+        div {
+            margin-bottom: 22px;
+        }
+
+        .btns {
+            text-align: left;
+            float: left;
+        }
+
+        .btn1 {
+            width: 120px;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: white;
+            background-color: red;
+            border-radius: 30px;
+            border: 3px solid white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .btn2 {
+            width: 120px;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            border-radius: 30px;
+            border: 3px solid white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .upload {
+            background-color: white;
+            padding-top: 7px;
+        }
+
+        .img {
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <form>
+            <center>
+                <h1> <img
+                        src="data:image/png;base64,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"
+                        class="img" alt="logo"> Forms in HTML</h1>
+            </center>
+            <div>
+                <b>First Name:</b> <input type="text" name="firstName" maxlength="30" minlength="3"
+                    placeholder="Enter your first name">
+            </div>
+            <div>
+                <b>Last Name:</b> <input type="text" name="lastName" maxlength="30" minlength="3"
+                    placeholder="Enter your last name">
+            </div>
+            <div>
+                <div>
+                    <b> Age:</b> <input type="number" name="age" min="5" max="30" step="3" placeholder="Enter your age">
+                </div>
+                <div>
+                    <b>Email:</b> <input type="email" name="userEmail" placeholder="Enter your email">
+                </div>
+                <div>
+                    <b>Password: </b> <input type="password" name="userPassword" placeholder="Enter your password">
+                </div>
+                <b>Student ID:</b> <input type="number" name="studentId" required placeholder="Enter your first S. Id">
+            </div>
+            <div>
+                <b>Gender: </b>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div>
+                <b>Choose City: </b>
+                <input type="checkbox" name="testCity" value="khi"> Karachi
+                <input type="checkbox" name="testCity" value="lhr"> Lahore
+                <input type="checkbox" name="testCity" value="isl"> Islamabad
+                <input type="checkbox" name="testCity" value="psh"> Peshawar
+                <input type="checkbox" name="testCity" value="qta"> Quetta
+            </div>
+            <div>
+                <b>Upload a photo:</b> <input type="file" name="image" class="upload">
+            </div>
+            <div>
+                <b>Date of Birth:</b> <input type="date" name="dob">
+            </div>
+            <div>
+                <b>Bday (mm/yyyy):</b> <input type="month" name="bmonth">
+            </div>
+            <div>
+                <b>Favourite Color: </b> <input type="color" name="favColor" required>
+            </div>
+            <div>
+                <b>Search Something:</b> <input type="search" name="search" placeholder="Search here.."
+                    style="width: 370px !important;">
+            </div>
+            <div>
+                <b>Choose Course: </b>
+                <select name="course" class="widthh">
+                    <option value="web">Web Development</option>
+                    <option value="freelance" selected>Freelancing</option>
+                    <option value="dm">Digital Marketing</option>
+                </select>
+            </div>
+            <div>
+                <b>Phone number:</b>
+                <input type="tel" name="phone" placeholder="Enter your phone number">
+            </div>
+            <div>
+                <b>Course (date and time):</b>
+                <input type="datetime-local" name="courseTime" placeholder="Enter course timeing">
+            </div>
+            <div>
+                <b>GPA (scale of 0-4):</b>
+                <input type="range" name="gpa" min="0" max="4">
+            </div>
+            <div>
+                <b>Enter Browser:</b>
+                <input type="text" list="myBrowsers" name="selectBrowsers" placeholder="Enter your favourite Browser">
+                <datalist id="myBrowsers">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="IE">Internet Explorer</option>
+                    <option value="MF">Mozilla FireFox</option>
+                </datalist>
+            </div>
+            <div>
+                <b>URL Source:</b> <input type="url" name="webLink" placeholder="Enter your favourite web">
+            </div>
+            <div>
+                <b>Time:</b> <input type="time" name="tm">
+            </div>
+            <div>
+                <b>Choose week:</b> <input type="week" placeholder="Choose a week" name="week">
+            </div>
+            <div>
+                <b style="display:inline-block; width:140px">Message:</b> <br>
+                <textarea name="msg" cols="50" rows="6" placeholder="Leave us a message..."></textarea>
+                <div class="btns">
+                    <br>
+                    <input type="button" name="addbtn" value="ADD" class="btn2">
+                    <input type="reset" value="DELETE" name="dlt" class="btn1">
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
