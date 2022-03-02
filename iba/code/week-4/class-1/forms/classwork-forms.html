@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Forms</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+        .main {
+            width: 80%;
+            margin: 0 auto;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Forms in HTML</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    Student Name: <input type="text" name="studentName" value="DanishUlHassan">
+                </div>
+                <div>
+                    FatherName: <input type="text" name="fatherName" maxlength="30" minlength="3">
+                </div>
+                <div>
+                    Student ID: <input type="number" name="studentId" required>
+                </div>
+                <div>
+                    Upload a photo: <input type="file" name="image">
+                </div>
+                <div>
+                    Date of Birth: <input type="date" name="dob">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>More Fields in HTML Forms</legend>
+                <div>
+                    Color: <input type="color" name="shirtColor" required>
+                </div>
+                <div>
+                    Age: <input type="number" name="age" min="5" max="30" step="3">
+                </div>
+                <div>
+                    Email: <input type="email" name="userEmail">
+                </div>
+                <div>
+                    Password: <input type="password" name="userPassword">
+                </div>
+                <div>
+                    Choose Course: 
+                    <select name="course">
+                        <option value="web">Web Development</option>
+                        <option value="freelance" selected>Freelancing</option>
+                        <option value="dm">Digital Marketing</option>
+                    </select>
+                </div>
+                <div>
+                    Gender: <br>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+                <div>
+                    Choose City: <br>
+                    <input type="checkbox" name="testCity" value="khi"> Karachi
+                    <input type="checkbox" name="testCity" value="lhr"> Lahore
+                    <input type="checkbox" name="testCity" value="isl"> Islamabad
+                    <input type="checkbox" name="testCity" value="psh"> Peshawar
+                    <input type="checkbox" name="testCity" value="qta"> Quetta
+                </div>
+                <div>
+                    Enter Browser Name: <br>
+                    <input type="text" list="myBrowsers" name="selectBrowsers">
+                    <datalist id="myBrowsers">
+                        <option value="chrome">Google Chrome</option>
+                        <option value="IE">Internet Explorer</option>
+                        <option value="MF">Mozilla FireFox</option>
+                    </datalist>
+                </div>
+                <div>
+                   URL Source: <input type="url" name="webLink">
+                </div>
+                <div>
+                    <textarea name="msg" cols="30" rows="4"></textarea>
+                </div>
+            </fieldset> <br>
+            <div>
+                <input type="submit" value="Save">
+                <button>My Button</button>
+                <input type="button" name="btn" value="Simple Button">
+                <input type="reset" value="Reset" name="reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
