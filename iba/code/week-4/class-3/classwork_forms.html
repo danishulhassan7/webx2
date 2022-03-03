@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learning HTML Forms</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input type="text" name="sName" value="Abdullah" readonly>
+        </div> <br>
+        <div>
+            <input type="text" name="fName" value="Jamal" disabled>
+        </div>  <br>
+        <div>
+            <input type="password" name="myPass" placeholder="Enter a password">
+        </div>  <br>
+        <div>
+            <input type="file" name="pics" multiple>
+        </div> <br>
+        <div>
+            <select name="course" id="course" multiple>
+                <option value="web">Web Development</option>
+                <option value="freelancing">Freelancing</option>
+                <option value="dm">Digital Marketing</option>
+            </select>
+        </div> <br>
+        <div>
+            <input type="text" required name="cnicNum" placeholder="CNIC format 42401-9700000-1" pattern="[0-9]{5}-[0-9]{7}-[0-9]{1}" title="Enter CNIC No. in format of 42401-9700000-1">
+
+        </div> <br>
+        <div>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" pattern="[^'\x22]+" title="Invalid Input">
+        </div> <br>
+        <input type="submit" name="Save" value="Add new student">
+    </form>
+</body>
+
+</html>
