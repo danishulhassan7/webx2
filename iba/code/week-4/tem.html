@@ -10,37 +10,64 @@
     		font-family: calibri;	
     		font-size: 18px;
 	}
-	.main {
-	}
 
 	.header {
-    		background-color:lightgray;
-    		height: 95px;
+    		background-color:white;
+    		height: 155px;
     		width: 100%;
     		color: black;
-    		position: fixed;
 		font-weight:bold;
-    		top:0;	
+		position:fixed;
+		top:0;
 		display:flex;
-		align-items:center;
-	}
-	.navbar {
-		width:80%;
-		margin: 0px auto;
-	}
-	.content {
+		flex-direction:column;
+		align-items:center;	
 		
 	}
+	.navbar1 {
+		width:99%;
+		border:3px solid black;
+		margin:5px 0px;
+	}
+	.navbar2 {
+		width:99%;
+		border: 3px solid black;
+	}
+	nav ul li {
+		display:inline-block;
+		list-style-type:none;	
+	}
+	nav ul li a {
+		color: black;	
+		text-decoration: none;
+		font-weight:bold;
+		font-size:23px;
+		padding:0px 6px;
+	}
+	.section {
+		width: 97%;
+		padding-top: 165px !important;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+	}
+	.section div{
+		width: 145px;
+		height: 190px;
+		background-color: red;
+		color: white;
+	}
+	
 	.footer {
 		height: 60px;
-		background-color: lightgray;
+		background-color: white;
 		color: black;
-		margin:0px;
-		padding:0px;
 		text-align:center;
 		font-weight:bold;
 		padding-top: 5px;
-		margin-top:225px;
+		margin-top:5px;
 		
 	}
 </style>
@@ -49,17 +76,50 @@
 <body>
 
 	<header class="header">
-		<div class="navbar" style="">
-		<p>Copyright &copy; All rights reserved 2022</p>
-		<!--	<nav>
+		<div class="navbar1">
+			<nav>
 				<ul>
 					<li><a href="">abc</a></li>
 					<li><a href="">xyz</a></li>
 				</ul>
-			</nav> -->
+			</nav>
+		</div>
+		<div class="navbar2">
+			<nav>
+				<ul>
+					<li><a href="">abc</a></li>
+					<li><a href="">xyz</a></li>
+				</ul>
+			</nav>
 		</div>
 	</header>
-	<section></section>
+	<section class="section">
+		<div>100</div>
+		<div>200</div>
+		<div>300</div>
+		<div>400</div>
+		<div>300</div>
+		<div>400</div>
+		<div>100</div>
+		<div>200</div>
+		<div>300</div>
+		<div>dd7870</div>
+		<div>dd00</div>
+		<div>dd00</div>
+		<div>400</div>
+		<div>100</div>
+		<div>200</div>
+		<div>100</div>
+		<div>200</div>
+		<div>300</div>
+		<div>400</div>
+		<div>dd00</div>
+		<div>600</div>
+		<div>800</div>
+		<div>900</div>
+		<div>900</div>
+	</span>
+	</section>
 	<footer class="footer">
 		<p>Copyright &copy; All rights reserved 2022</p>
 	</footer>
@@ -73,5 +133,5 @@ Hafiza Fareen
 Loveindhr
 Amjad Jabbar
 Afaq
-Farukh Hussain
+Farrukh Hussain
 Huzaifa Noor
