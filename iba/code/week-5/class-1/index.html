@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XPF Home Insurance - HomePage</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+	body {
+    		background-color: aquamarine;
+    		font-family: calibri;
+    		padding: 0px;
+    		margin: 0px;
+    	    font-size: 18px;
+	}
+	.header {
+    		height: 90px;
+    		background-color: #222b75;
+    		width: 100%;
+    		color: white;
+    		position: fixed;
+    		top: 0;
+	}
+	.header-txt {
+    		width: 90%;
+    		margin: 0px auto;
+	}
+	.left {
+    		float: left;
+    		display: flex;
+    		align-items: center;
+    		padding-top: 15px;
+	}
+	.logo-img {
+    		height: 65px;
+    		width: 65px;
+	}
+	.hero-logotxt {
+   		font-size: 27px;
+    		font-weight: 500;
+    		color: #12a3a6;
+    		padding-left: 10px;
+    		letter-spacing: 2px;
+    		font-family: Impact;
+	}
+	.txt-clr {
+    	color: white;
+	}
+	.left a {
+    		text-decoration: none;
+	}
+	.right {
+    		float: right;
+	}
+	.nav {
+    		list-style: none;
+	}
+	.nav li {
+    		display: inline-block;
+    		padding: 12px 8px 0px 8px;
+		}
+	.nav li a {
+    		color: red;
+    		text-decoration: none;
+    		font-weight: bold;
+    		color: white;
+	}
+
+	.nav li a:hover {
+    		color: lightseagreen;
+    		background-color: white;
+    		text-decoration: none;
+    		font-weight: bold;
+    		padding: 6px 12px;
+    		border: 1px solid lightseagreen;
+    		border-radius: 30px;
+	}
+
+	.active {
+    		background-color: #12a3a6;
+    		border-radius: 10px;
+    		padding: 5px;
+	}
+
+   	.hero {
+		margin-top:86px;
+		width:100%;
+		background-color:lightcyan;
+		height: 490px;
+		background-image: url('img/house-1.jpg');
+		background-repeat: no-repeat;
+		background-position:center;
+		background-size:cover;
+	        box-shadow:inset 0 0 0 2000px rgba(0, 70, 210, 0.3);	
+	}
+	.hero-content {
+		width: 75%;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.hero-icon {
+		margin-top:40px;
+		width:120px;
+		height:120px;
+		border-radius:60px;
+		padding:20px;
+		background-color:lightgray;
+	}
+	.hero-txt {
+		display:inline-block;
+		font-family:calibri;
+		font-size: 400%;
+		font-weight: bold;
+		color: white;
+	}
+	.hero-search input[type='search'] {
+		width:65%;
+		height:55px;
+		font-size: 22px;
+		font-family:calibri;
+		padding: 9px;
+		border:none;
+		border-radius:10px;
+		text-align:center;
+		margin-top:8px;
+	}
+	.hero-btn button {
+		background-color: #2136ed;
+		color:white;
+		font-family:calibri;
+		font-size:22px;
+		text-align:center;
+		padding:8px 19px;
+		font-weight:bold;
+		border:none;
+		border-radius:20px;
+		margin-top:12px;
+	}
+	.about {
+		width:75%;
+		margin:0px auto;
+	}
+	.abt-1, .abt-2, .abt-3 {
+		width: 30%;
+		margin: 12px 16px;
+	}
+	.abt-head h1 {
+		width: 90%;
+		text-align:center;
+		font-size: 200%;
+		font-weight: bold;
+		color: black;
+		margin: 0px auto;
+		margin-top: 30px;
+	}
+	.abt-icon {
+		margin-left:  38%;
+		text-align: center;
+		font-size: 60px;
+		color: #2136ed;
+	}
+	.abt-btn {
+		margin-top: 10px;
+		background-color: #2136ed;
+		color:white;
+		font-family:calibri;
+		font-size:26px;
+		text-align:center;
+		padding:10px 22px;
+		font-weight:bold;
+		border:none;
+		border-radius:6px;
+		width: 300px;
+	}
+	.about-desc {
+		text-align: justify;
+		line-height: 1.3;
+	}
+
+	
+	.about {
+            height: 490px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    .about.abt-1,.about.abt-2,.about.abt-3{
+            width: 320px;
+			margin: 0px auto;
+        }
+	.form-head {
+		width: 90%;
+		text-align:center;
+		font-size: 120%;
+		font-weight: bold;
+		color: white;
+		margin: 0px auto;
+		padding-top: 30px;
+	}
+	.form-section {
+		background-color: #2136ed;
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+		min-height: 490px ;
+	}
+	.form-section form {
+		width: 50%;
+		margin: 0px auto;
+		font-size: 23px;
+		color: white;
+		padding-top: 30px;
+	}
+	.form-section form div label {
+		display: inline-block;
+		width: 225px;
+		text-align: left;
+	}
+	input[type="text"],input[type="email"], select {
+		font-size: 18px;
+		padding: 7px;
+		width: 360px;
+		border: none;
+		border-radius: 7px;
+		margin-bottom: 6px;
+	}
+	select {
+		display: inline-block;
+		width: 374px;
+		font-size: 18px;
+		padding: 9px;
+		border: none;
+		border-radius: 7px;
+		margin-top: 10px;
+		margin-bottom: 6px;
+	}
+	textarea {
+		display: inline-block;
+		width: 347px;
+		font-size: 18px;
+		padding: 14px;
+		border: none;
+		border-radius: 7px;
+		margin-top: 10px;
+		margin-bottom: 6px;
+	}
+	.form-btn {
+		width: 80%;
+		margin: 0px auto;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.form-btn button {
+		background-color: transparent;
+		color:white;
+		font-family:calibri;
+		font-size:22px;
+		text-align:center;
+		padding:8px 19px;
+		font-weight:bold;
+		border:1px solid white;
+		border-radius:20px;
+		margin-top:12px;
+	}
+	.footer-hero {
+		width:100%;
+		background-color:lightcyan;
+		height: 260px;
+		background-image: url('img/house-2.jpg');
+		background-repeat: no-repeat;
+		background-position:center;
+		background-size:cover;
+	    box-shadow:inset 0 0 0 2000px rgba(0, 70, 210, 0.3);	
+	}
+	.footer-hero-content {
+		width: 75%;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.footer-hero {
+		height: 190px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	.footer-hero div {
+		width: 34%;
+		margin: 0px auto;
+	}
+    </style>
+</head>
+<body>
+
+    <!-- header starts  -->
+	<header>
+        <div class="header">
+            <div class="header-txt">
+            <div class="left">
+                <img src="img/logo.png" alt="Main Logo" class="logo-img"> 
+                <a href="#">
+                    <span class="hero-logotxt"> <span class="txt-clr">X</span>PF H<span class="txt-clr">OME INSURN</span>ANCE AG<span class="txt-clr">EN</span>CY</span>
+                </a>
+            </div>
+            <div class="right">
+                <ul class="nav">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="gallery.html">Search</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+		    		<li><a href="aboutus.html">Policy</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+	</header>
+        <!-- header ends  -->
+
+    <!-- Hero Section Starts -->
+    <section class="hero">
+	<div class="hero-content">
+	<div>
+		<img src="img/home.png" alt="Home" class="hero-icon">
+	</div>
+	<div class="hero-txt">
+		<span>XPF - The Home Insurance Agency </span>
+	</div>
+	<div class="hero-search">
+		<input type="search" placeholder="Search the address" name="search" id="search">
+	</div>
+	<div class="hero-btn">
+		<button>Search</button>
+	</div>
+	</div>
+    </section>
+   <!-- Hero Section Ends -->
+   <div class="abt-head">
+	<h1> ABOUT US </h1>
+	<hr style="background-color: #2136ed; width: 100px; height: 3px;">
+   </div>
+    <!-- About section starts -->
+    <section class="about"> 
+	
+	<div class="abt-1">
+		<div>
+			<i class="fa fa-check abt-icon"></i>
+		</div>
+		<div class="abt-txt">
+			<button class="abt-btn">PRCISE VALUE </button>
+		</div>
+		<div class="about-desc">
+		<p>
+			Property and casualty insurance agents sell insurance policies that protect individuals and 					businesses from financial loss resulting from automobile accidents, fire, theft, storms, and other 				events that can damage property. For businesses, property and casualty insurance can also cover 				injured Workers Compensation Insurance, product liability claims, or medical malpractice claims.
+		</p>
+		<hr style="background-color: #2136ed; width: 280px; height: 2px;">
+		</div>
+	</div>
+
+	<div class="abt-2">
+		<div>
+			<i class="fa fa-search abt-icon"></i>
+		</div>
+		<div class="abt-txt">
+			<button class="abt-btn">BROWSE & FIND </button>
+		</div>
+		<div class="about-desc">
+		<p>
+			Property and casualty insurance agents sell insurance policies that protect individuals and 					businesses from financial loss resulting from automobile accidents, fire, theft, storms, and other 				events that can damage property. For businesses, property and casualty insurance can also cover 				injured Workers Compensation Insurance, product liability claims, or medical malpractice claims.
+		</p>
+		<hr style="background-color: #2136ed; width: 280px; height: 2px;">
+		</div>
+	</div>
+
+	<div class="abt-3">
+		<div>
+			<i class="fa fa-arrow-up abt-icon"></i>
+		</div>
+		<div class="abt-txt">
+			<button class="abt-btn">NO INFO?</button>
+		</div>
+		<div class="about-desc">
+		<p>
+			Property and casualty insurance agents sell insurance policies that protect individuals and 					businesses from financial loss resulting from automobile accidents, fire, theft, storms, and other 				events that can damage property. For businesses, property and casualty insurance can also cover 				injured Workers Compensation Insurance, product liability claims, or medical malpractice claims.
+		</p>
+		<hr style="background-color: #2136ed; width: 280px; height: 2px;">
+
+		</div>
+	</div>
+    </section> <br><br>
+    <!-- About Section Ends -->
+
+	<!-- form section starts  -->
+	<section class="form-section">
+		<div class="form-head">
+			<h1> WE'RE HAPPY TO HEAR FROM YOU </h1>
+			<hr style="background-color: white; width: 110px; height: 2px;">
+		   </div>
+		<form>
+			<div>
+				<label for="name">Name</label>
+				<input type="text" name="uname" id="uname" placeholder="Your Name">
+			</div>
+			<div>
+				<label for="uemail">Email</label>
+				<input type="email" name="uemail" id="uemail" placeholder="Email Address">
+			</div>
+			<div>
+				<label for="find">How did you find us?</label>
+				<select name="find" id="find">
+					<option value="friend">Friend</option>
+					<option value="Google">Google</option>
+					<option value="sm">Social Media</option>
+				</select>
+			</div>
+			<div>
+				<label for="newsletter">Newsletter</label>
+				<input type="checkbox" name="newsletter" id="newsletter"> Yes
+			</div>
+			<div>
+				<label for="msg">Drop us a line</label>
+				<textarea name="msg" id="msg" cols="26" rows="3" placeholder="Your Message"></textarea>
+			</div>
+			<div class="form-btn">
+				<button>Send</button>
+			</div>
+		</form>
+	</section>
+	<!-- form section ends  -->
+
+	<!-- footer section starts  -->
+	<section class="footer-hero">
+			<div class="">
+				<ul class="nav">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Search</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Policy</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+				<p style="color: white; font-size: 90%; font-weight: bold; text-align: center;">Copyrights &copy; All rights reserved</p>
+			</div>
+
+			<div class="">
+				<ul class="nav">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+				</ul>
+			</div>
+	</section>
+	<!-- footer section ends  -->
+</body>
+</html>

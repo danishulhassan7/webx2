@@ -1,0 +1,169 @@
+body {
+    background-color: aquamarine;
+    font-family: calibri;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    font-size: 18px;
+}
+.main {
+
+}
+.header {
+    height: 90px;
+    background-color: teal;
+    width: 100%;
+    color: white;
+    position: fixed;
+    top: 0;
+}
+.header-txt {
+    width: 90%;
+    margin: 0px auto;
+}
+.left {
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+}
+.logo-img {
+    height: 65px;
+    width: 65px;
+}
+.hero-txt {
+    font-size: 27px;
+    font-weight: 500;
+    color: aqua;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    font-family: Impact;
+}
+.txt-clr {
+    color: white;
+}
+.left a {
+    text-decoration: none;
+}
+.right {
+    float: right;
+}
+.nav {
+    list-style: none;
+}
+.nav li {
+    display: inline-block;
+    padding: 12px 8px 0px 8px;
+}
+.nav li a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.nav li a:hover {
+    color: lightseagreen;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: 1px solid lightseagreen;
+    border-radius: 30px;
+}
+
+.active {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.content {
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 90px;
+    text-align: justify;
+}
+.main-img {
+    height: 400px;
+    border-radius: 20px;
+    border: 6px solid darkturquoise;
+    margin-bottom: 20px;
+}
+.grd-img {
+    width: 290px;
+    height: 200px;
+    border-radius: 20px;
+    border: 6px solid darkturquoise;
+    margin-left: 10px;
+    margin-bottom: 20px;  
+}
+.contact-img {
+    width: 690px;
+    border-radius: 20px;
+    border: 6px solid darkturquoise;
+    margin-bottom: 30px; 
+}
+.g-imgs {
+    margin: 0 auto;
+    text-align: center;
+    border: 25px solid darkcyan;
+    margin-top: 20px;
+}
+
+.gallery-img {
+    height: 170px;
+    width: 170px;
+    border-radius: 30px;
+    border: 20px inset gray;
+    margin-right: 10px;
+}
+.img-box {
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: lightcyan;
+    width: 170px;
+    text-align: center;
+    border: 10px solid darkcyan;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 4px;
+    font-family:Impact;
+}
+.about-content {
+    margin-top: 20px;
+    text-align: center;
+    border: 25px solid darkcyan;
+}
+.about-img {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.address {
+    border: 25px solid darkcyan;
+    text-align: center;
+    padding: 20px;
+    font-weight: 400;
+}
+.footer {
+    height: 60px;
+    background-color: teal;
+    width: 100%;
+    color: white;
+    bottom: 0;
+}
+.footer-txt {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 90%;
+}
+
+/* .footer-btm {
+    position: fixed;
+    bottom: 0;
+} */
