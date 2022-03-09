@@ -4,7 +4,7 @@
     <title>XPF Home Insurance - HomePage</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
     <style>
 	body {
     		background-color: aquamarine;
@@ -137,7 +137,7 @@
 		margin-top:12px;
 	}
 	.about {
-		width:75%;
+		width:85%;
 		margin:0px auto;
 	}
 	.abt-1, .abt-2, .abt-3 {
@@ -145,7 +145,7 @@
 		margin: 12px 16px;
 	}
 	.abt-head h1 {
-		width: 90%;
+		width: 75%;
 		text-align:center;
 		font-size: 200%;
 		font-weight: bold;
@@ -170,7 +170,7 @@
 		font-weight:bold;
 		border:none;
 		border-radius:6px;
-		width: 300px;
+		width: 94%;
 	}
 	.about-desc {
 		text-align: justify;
@@ -187,7 +187,7 @@
         }
     .about.abt-1,.about.abt-2,.about.abt-3{
             width: 320px;
-			margin: 0px auto;
+	    margin: 0px auto;
         }
 	.form-head {
 		width: 90%;
@@ -206,7 +206,7 @@
 		min-height: 490px ;
 	}
 	.form-section form {
-		width: 50%;
+		width: 40%;
 		margin: 0px auto;
 		font-size: 23px;
 		color: white;
@@ -220,14 +220,14 @@
 	input[type="text"],input[type="email"], select {
 		font-size: 18px;
 		padding: 7px;
-		width: 360px;
+		width: 55%;
 		border: none;
 		border-radius: 7px;
 		margin-bottom: 6px;
 	}
 	select {
 		display: inline-block;
-		width: 374px;
+		width: 57%;
 		font-size: 18px;
 		padding: 9px;
 		border: none;
@@ -237,7 +237,7 @@
 	}
 	textarea {
 		display: inline-block;
-		width: 347px;
+		width: 53.8%;
 		font-size: 18px;
 		padding: 14px;
 		border: none;
@@ -281,7 +281,6 @@
 	.footer-hero {
 		height: 190px;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
 		align-items: flex-start;
 	}
@@ -289,7 +288,15 @@
 		width: 34%;
 		margin: 0px auto;
 	}
+
+	.center {
+  		margin: auto;
+ 		width: 50%;
+  		padding: 10px;
+	}
+
     </style>
+<link rel="stylesheet" href="css/media.css" type="text/css">
 </head>
 <body>
 
@@ -308,7 +315,7 @@
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="gallery.html">Search</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
-		    		<li><a href="aboutus.html">Policy</a></li>
+		    <li><a href="aboutus.html">Policy</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
@@ -347,7 +354,7 @@
 			<i class="fa fa-check abt-icon"></i>
 		</div>
 		<div class="abt-txt">
-			<button class="abt-btn">PRCISE VALUE </button>
+			<center><button class="abt-btn">PRCISE VALUE </button></center>
 		</div>
 		<div class="about-desc">
 		<p>
@@ -362,7 +369,7 @@
 			<i class="fa fa-search abt-icon"></i>
 		</div>
 		<div class="abt-txt">
-			<button class="abt-btn">BROWSE & FIND </button>
+			<center><button class="abt-btn">BROWSE & FIND </button></center>
 		</div>
 		<div class="about-desc">
 		<p>
@@ -377,7 +384,7 @@
 			<i class="fa fa-arrow-up abt-icon"></i>
 		</div>
 		<div class="abt-txt">
-			<button class="abt-btn">NO INFO?</button>
+			<center><button class="abt-btn">NO INFO?</button></center>
 		</div>
 		<div class="about-desc">
 		<p>
@@ -430,7 +437,7 @@
 
 	<!-- footer section starts  -->
 	<section class="footer-hero">
-			<div class="">
+			<div class="foot-nav">
 				<ul class="nav">
 					<li><a href="#" class="active">Home</a></li>
 					<li><a href="#">Search</a></li>
@@ -438,10 +445,10 @@
 					<li><a href="#">Policy</a></li>
 					<li><a href="#">Contact Us</a></li>
 				</ul>
-				<p style="color: white; font-size: 90%; font-weight: bold; text-align: center;">Copyrights &copy; All rights reserved</p>
+				<p class="cr" style="color: white; font-size: 90%; font-weight: bold; text-align: center;">Copyrights &copy; All rights reserved</p>
 			</div>
 
-			<div class="">
+			<div class="social-icons">
 				<ul class="nav">
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
