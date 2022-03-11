@@ -1,115 +1,253 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XPF Home Insurance - HomePage</title>
+    <title>HomePage</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <style>
-	body {
-    		background-color: aquamarine;
-    		font-family: calibri;
-    		padding: 0px;
-    		margin: 0px;
-    	    font-size: 18px;
-	}
-	.header {
-    		height: 90px;
-    		background-color: #222b75;
-    		width: 100%;
-    		color: white;
-    		position: fixed;
-    		top: 0;
-	}
-	.header-txt {
-    		width: 90%;
-    		margin: 0px auto;
-	}
-	.left {
-    		float: left;
-    		display: flex;
-    		align-items: center;
-    		padding-top: 15px;
-	}
-	.logo-img {
-    		height: 65px;
-    		width: 65px;
-	}
-	.hero-logotxt {
-   		font-size: 27px;
-    		font-weight: 500;
-    		color: #12a3a6;
-    		padding-left: 10px;
-    		letter-spacing: 2px;
-    		font-family: Impact;
-	}
-	.txt-clr {
-    	color: white;
-	}
-	.left a {
-    		text-decoration: none;
-	}
-	.right {
-    		float: right;
-	}
-	.nav {
-    		list-style: none;
-	}
-	.nav li {
-    		display: inline-block;
-    		padding: 12px 8px 0px 8px;
-		}
-	.nav li a {
-    		color: red;
-    		text-decoration: none;
-    		font-weight: bold;
-    		color: white;
-	}
-
-	.nav li a:hover {
-    		color: lightseagreen;
-    		background-color: white;
-    		text-decoration: none;
-    		font-weight: bold;
-    		padding: 6px 12px;
-    		border: 1px solid lightseagreen;
-    		border-radius: 30px;
-	}
-
-	.active {
-    		background-color: #12a3a6;
-    		border-radius: 10px;
-    		padding: 5px;
-	}
-
-
-    </style>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+    
 </head>
 <body>
 
-    <!-- header starts  -->
+	<!-- navbars starts -->
+	    <!-- header 1 starts  -->
 	<header>
-        <div class="header">
-            <div class="header-txt">
-            <div class="left">
-                <img src="img/logo.png" alt="Main Logo" class="logo-img"> 
-                <a href="#">
-                    <span class="hero-logotxt"> <span class="txt-clr">X</span>PF H<span class="txt-clr">OME INSURN</span>ANCE AG<span class="txt-clr">EN</span>CY</span>
-                </a>
-            </div>
-            <div class="right">
+        <div class="header1">
                 <ul class="nav">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="gallery.html">Search</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-		    		<li><a href="aboutus.html">Policy</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#l">COMPANY</a></li>
+		    <li><a href="#">CONTACT</a></li>
                 </ul>
-            </div>
         </div>
+
+	<div class="header2">
+                <ul class="nav2">
+                    <li><a href="#" class="active2">Home</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#l">DBMS</a></li>
+		    <li><a href="#">JAVA</a></li>
+                </ul>
         </div>
 	</header>
+        <!-- header 1 ends  -->
+	<!-- navbars ends -->
+
+	<!-- Left Side nav starts -->
+	
+	<nav class="leftnav">
+		<ul>	
+			<li><a href="">Coffee</a></li>
+			<li><a href="">Tea</a></li>
+			<li><a href="">Coca Cola</a></li>
+		</ul>
+	</nav>	
+
+	<!-- Left side nav ends -->
+
+        <!-- header starts  -->
+	<header class="header"> 
+		<h1>Tables in HTML</h1>
+	</header>
         <!-- header ends  -->
+
+	<!-- Table Section Starts -->
+	<section>
+		<table id="studentRecord" >
+			<thead>
+				<tr style="">
+					<th>Name</th>
+					<th>Email</th>
+					<th>NickName</th>
+					<th>BirthDate</th>
+					<th style="text-align:center;">Gender</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Usman Khawaja</td>
+					<td>usmankhawaja32@gmail.com</td>
+					<td>Maan</td>
+					<td>02/5/1989</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+				
+				<tr>
+					<td>Steven Smith</td>
+					<td>smithy54@gmail.com</td>
+					<td>Stevvo</td>
+					<td>24/6/1994</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+
+				
+				<tr>
+					<td>Meg Lanning</td>
+					<td>meglan5@gmail.com</td>
+					<td>Maigi</td>
+					<td>20/7/1993</td>
+					<td style="text-align:center;"><b class="gfemale">Female <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+				<tr>
+					<td>Tavis Head</td>
+					<td>thead4@gmail.com</td>
+					<td>Troy</td>
+					<td>21/2/1974</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+
+				<tr>
+					<td>Marnus Labuschagne</td>
+					<td>marnus54@gmail.com</td>
+					<td>Stevvo</td>
+					<td>14/10/1990</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+
+				<tr>
+					<td>Shane Watson</td>
+					<td>shanew54@gmail.com</td>
+					<td>Watto</td>
+					<td>24/6/1974</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+				<tr>
+					<td>Tavis Head</td>
+					<td>thead4@gmail.com</td>
+					<td>Troy</td>
+					<td>21/2/1974</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+
+				<tr>
+					<td>Marnus Labuschagne</td>
+					<td>marnus54@gmail.com</td>
+					<td>Stevvo</td>
+					<td>14/10/1990</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+
+
+				<tr>
+					<td>Shane Watson</td>
+					<td>shanew54@gmail.com</td>
+					<td>Watto</td>
+					<td>24/6/1974</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+				<tr>
+					<td>Mitchell Starc</td>
+					<td>micth456@gmail.com</td>
+					<td>Matchyy</td>
+					<td>08/6/1994</td>
+					<td style="text-align:center;"><b class="gmale">Male <i class="fa fa-mars male-icon"></i> </b></td>
+					<td style="text-align:center;"><b class=""> <i class="fa fa-search-plus icon-1 myicon"></i> <i class="fa fa-pencil-square-o icon-2 myicon"></i> <i class="fa fa-times icon-3 myicon"></i> </b></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="6"><b>Displaying 1 to 10 of 50 items</b> <div class="pagination">
+  					<a href="#"><i class="fa fa-chevron-left"></i></a>
+  					<a href="#">1</a>
+  					<a href="#">2</a>
+  					<a href="#">3</a>
+  					<a href="#">4</a>
+ 					<a href="#">5</a>
+  					<a href="#"><i class="fa fa-chevron-right"></i></a>
+</div> </td>
+				</tr>
+			</tfoot>
+		</table>
+	</section>
+	<!-- Table Section Ends -->
+	
+	<!-- Simple Table Section Starts -->
+	
+	<section style="margin:50px 0px;">
+		<table id="simpleTab">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Savings</th>
+			</tr>
+			<tr>
+				<td>Smith</td>
+				<td>Steve</td>
+				<td>$300</td>
+			</tr>
+			<tr>
+				<td>Marnus</td>
+				<td>Labuschagne</td>
+				<td>$400</td>
+			</tr>
+			<tr>
+				<td>Marsh</td>
+				<td>Mitchell</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>Meg</td>
+				<td>Lanning</td>
+				<td>$500</td>
+			</tr>
+			<tr>
+				<td>Patt</td>
+				<td>Cummins</td>
+				<td>$600</td>
+			</tr>
+		</table>
+	</section>
+
+	<!-- Simple Table Section Ends -->
+
+	<!-- card section starts  -->
+	<section class="cards">
+		<!-- card - 1 -->
+		<div class="card-1">
+			<div class="top">Basic</div>
+			<div class="price">$9.99</div>
+			<div class="details"> 1GB Storage <br> 5GB Bandwidth <br> 2 Domains <br> 3 Databases <br> 1FTP Account <br> 25 Email Accounts</div>
+			<div class="bottom"><button class="btn btn1">Buy Now</button></div>
+		</div>
+		<!-- card -2  -->
+		<div class="card-2">
+			<div class="top">Standard</div>
+			<div class="price">$19.99</div>
+			<div class="details"> 10GB Storage <br> 500GB Bandwidth <br> 10 Domains <br> 25 Databases <br> 10FTP Account <br> 100 Email Accounts</div>
+			<div class="bottom"><button class="btn btn2">Buy Now</button></div>
+		</div>
+		<!-- card - 3  -->
+		<div class="card-3">
+			<div class="top">Silver</div>
+			<div class="price">$39.99</div>
+			<div class="details"> 25GB Storage <br> 100GB Bandwidth <br> 25 Domains <br> 50 Databases <br> 25FTP Account <br> 500 Email Accounts</div>
+			<div class="bottom"><button class="btn btn3">Buy Now</button></div>
+		</div>
+		<!-- card - 4  -->
+		<div class="card-4">
+			<div class="top">Gold</div>
+			<div class="price">$59.99</div>
+			<div class="details"> Unlimited Storage <br> Unlimited Bandwidth <br> Unlimited Domains <br> 50 Databases <br> Unlimited Account <br> Unlimited Email Accounts</div>
+			<div class="bottom"><button class="btn btn4">Buy Now</button></div>
+		</div>
+	</section>
+
+	<!-- card section ends  -->
 
 </body>
 </html>

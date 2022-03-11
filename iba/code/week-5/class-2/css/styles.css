@@ -1,0 +1,277 @@
+
+	body {
+    		background-color: #bacbd1;
+    		font-family: calibri;
+    		padding: 0px;
+    		margin: 0px;
+    	    	font-size: 18px;
+	}
+	.header {
+    		height: 90px;
+    		background-color: #0da4d6;
+    		width: 100%;
+    		color: white;
+		margin:0px;
+		padding:0px;
+	}
+	.header h1 {
+		text-align:center;
+		padding-top:20px;
+	}
+
+
+	/* navbars starts */
+	.header1 {
+    		height: 90px;
+    		background-color: #226ad6;
+    		width: 100%;
+    		color: white;
+		margin:0px;
+	}
+	.header2 {
+		margin-top:20px;
+    		height: 60px;
+    		background-color: lightgray;
+    		width: 100%;
+    		color: red;
+	}
+	.nav {
+    		list-style: none;
+	}
+	.nav li {
+    		display: inline-block;
+    		padding: 30px 8px 0px 38px;
+		}
+	.nav li a {
+    		color: red;
+    		text-decoration: none;
+    		font-weight: bold;
+    		color: white;
+	}
+
+	.nav li a:hover {
+    		color: lightseagreen;
+    		background-color: white;
+    		text-decoration: none;
+    		font-weight: bold;
+    		padding: 6px 12px;
+    		border: 1px solid lightseagreen;
+    		border-radius: 30px;
+	}
+
+	.active {
+    		background-color: #12a3a6;
+    		border-radius: 10px;
+    		padding: 5px;
+	}
+
+	.nav2 {
+    		list-style: none;
+	}
+	.nav2 li {
+    		display: inline-block;
+    		padding: 19px 38px 0px 38px;
+		border-right: 3px solid red;
+		height:41px;
+		}
+	.nav2 li a {
+    		color: red;
+    		text-decoration: none;
+    		font-weight: bold;
+	}
+
+	.nav2 li a:hover {
+    		color: lightseagreen;
+    		background-color: white;
+    		text-decoration: none;
+    		font-weight: bold;
+    		padding: 4px 12px;
+    		border: 1px solid lightseagreen;
+    		border-radius: 30px;
+	}
+
+	.active2 {
+    		background-color: darkgrey;
+		color: white !important;
+    		padding: 19px;
+	}
+
+	/* navbars ends */
+
+	
+	#studentRecord {
+		width: 90%;
+		margin: 0px auto;
+		table-layout: fixed;
+		margin-top:40px;
+		border-collapse: collapse;
+		font-family:calibri;
+		font-size: 18px;
+		background-color:white;
+	}
+	#studentRecord th {
+		text-align:left;
+	}
+	#studentRecord td, th {
+		border: 1px solid black;
+		padding: 9px 12px;
+	}
+	#studentRecord tr {
+		color: black;	
+	}
+	#studentRecord tr:nth-child(odd) {
+		background-color:#faf0f7;
+		color: black;	
+	}
+	#studentRecord .gmale {
+		text-align:center;
+		background-color: #04b2b5;
+		padding:2px 6px;
+		border-radius:4px;
+		color: white;
+	}
+	#studentRecord .gfemale {
+		text-align:center;
+		background-color: #a1107d;
+		padding:2px 6px;
+		border-radius:4px;
+		color: white;
+	}
+	#studentRecord .male-icon {
+		color:white;
+		font-weight:bold;
+		padding-left: 5px;
+	}
+	#studentRecord .myicon {
+		text-align:center;
+		padding:4px 6px;
+		border-radius:4px;
+		font-weight:bold;
+		color:white;
+		font-size:19px;
+	}
+	#studentRecord .icon-1 {
+		background-color: #04b2b5;
+	}
+	#studentRecord .icon-2 {
+		background-color: #e34a09;
+	}
+	#studentRecord .icon-3 {
+		background-color: #e31409;
+	}
+	#studentRecord .pagination {
+		margin-left:67% !important;
+		display: inline-block;
+	}
+	#studentRecord .pagination a {
+		 color: black;
+ 		 padding: 8px 16px;
+  		 text-decoration: none;
+	}
+
+	.cards {
+		width: 85%;
+		margin: 0px auto;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.card-1, .card-2, .card-3, .card-4 {
+		width:20%;
+		border: 1px solid lightgray;
+		margin: 30px 0px;
+	}
+	.top {
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 30px;
+		padding: 16px 30px;
+	}
+	.price {
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		font-size: 40px;
+		padding: 10px 30px;
+	}
+	.card-1 .price, .btn1 {
+		background-color:#d11608;
+	}
+	.card-2 .price, .btn2 {
+		background-color:#0831d1;
+	}
+	.card-3 .price, .btn3 {
+		background-color:#03a14d;
+	}
+	.card-4 .price, .btn4 {
+		background-color:#6e7a74;
+	}
+	.details {
+		background-color: lightgray;
+		color: black;
+		font-weight: bold;
+		text-align: center;
+		font-size: 17px;
+		padding: 10px 30px;
+		line-height:2.1;
+	}
+	.bottom {
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: 30px;
+		padding: 20px 30px;
+	}
+	.btn {
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		font-size: 20px;
+		padding: 7px 12px;
+		border-radius:6px;
+		border:none;
+	}
+	#simpleTab {
+		padding:20px;
+		width:80%;
+		margin:0px auto;
+		simpleTab
+		table-layout:fixed;
+		border-collapse:collapse;
+		border:none;
+	}
+	#simpleTab tr th {
+		border:none;
+		outline:none;
+		text-align:left;
+	}
+
+	#simpleTab td {
+		border-bottom: 1px solid gray;
+		padding:10px 12px;
+	}
+
+	/* left side nav starts */
+	.leftnav {
+		margin-top:30px;
+		background-color: gray;
+		color:black;
+	}
+	.leftnav ul {
+		list-style-type: none;	
+		border-left: 6px solid red;
+		padding-left:0px;
+	}
+	.leftnav ul li {
+		padding-left: 12px;
+	}
+	.leftnav ul li a {
+		text-decoration:none;
+		color:black;
+	}
+	/* left side nav ends */
+
+	
