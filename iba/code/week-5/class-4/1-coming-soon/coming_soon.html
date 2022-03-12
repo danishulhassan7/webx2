@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <style>
+        body {
+            background-color: black;
+            font-family: calibri;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+        }
+
+        .hero {
+            width: 100%;
+            background-color: cyan;
+            height: 100vh;
+            background-image: url('images/img-8.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0 0 0 2000px rgba(191, 144, 251, 0.7);
+        }
+
+        .hero-content {
+            width: 75%;
+            margin: 0px auto;
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        .hero-txt {
+            display: inline-block;
+            font-family: 'Sansita Swashed', cursive;
+            font-size: 400%;
+            font-weight: bold;
+            color: #b50e0e;
+            text-transform: capitalize;
+        }
+
+        .hero-txt p {
+            font-family: calibri;
+            font-size: 30%;
+            color: black;
+            font-family: monospace;
+        }
+        .timer {
+            margin-top: 15px;
+            color: #b50e0e;
+            text-align: center;
+            font-size: 300%;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        .social-icons {
+            width: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .social-icons span {
+            display: inline-block;
+            font-family: 'Sansita Swashed', cursive;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 46px;
+            padding-top: 25px;
+        }
+        .social-icons .nav   {
+            list-style-type: none;
+        }
+        .social-icons .nav li {
+            display: inline-block;
+            padding: 8px;
+        }
+        .social-icons .nav li a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons .fa {
+            width: 20px;
+            height: 20px;
+            border: 2px solid white; 
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .btn-sub {
+            margin-top:2%;
+            color: white;
+            font-family: 'Sansita Swashed', cursive;
+            background-color: #b50e0e;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 30px;
+            padding: 13px 26px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Hero Section Starts -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Social Section Starts  -->
+            <div class="social-icons">
+                <span>Genious &reg;</span>
+                <ul class="nav">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                </ul>
+            </div>
+            <!-- Social Section Ends  -->
+            <div class="hero-txt">
+                <span>Coming Soon </span>
+                <hr style="background-color: #b50e0e; height: 4px; border-radius: 20px; width: 110px; text-align: center;">
+                <p>Genious is a beautiful coming soon template that is designed by XPFDev with the colloboration of XYZ design company to come up with something unique.</p>
+            </div>
+            
+
+            <!-- Timer Section Starts  -->
+            <div class="timer" data-date="April 20, 2022 12:00:00">
+            </div>
+            <!-- Timer Section Ends  -->
+
+            <!-- Btn section starts  -->
+            <div>
+                <button class="btn-sub">Subscribe</button>
+            </div>
+            <!-- Btn secttion Ends  -->
+
+            
+
+        </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+
+
+
+
+
+    
+    <script src="timer.js"></script>
+</body>
+
+</html>

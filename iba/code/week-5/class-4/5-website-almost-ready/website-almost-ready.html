@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <style>
+        body {
+            background-color: black;
+            font-family: calibri;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+        }
+
+        .hero {
+            width: 100%;
+            background-color: cyan;
+            height: 100vh;
+            background-image: url('images/img-02.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: inset 0 0 0 2000px rgba(219, 212, 228, 0.7);
+        }
+
+        .hero-content {
+            width: 75%;
+            margin: 0px auto;
+            text-align: center;
+            padding-top: 4%;
+        }
+
+        .hero-icon {
+            font-size: 520%;
+            color: #510175;
+        }
+
+        .hero-txt {
+            display: inline-block;
+            font-family: calibri;
+            font-size: 300%;
+            font-weight: bold;
+            color: #510175;
+        }
+
+        .hero-txt p {
+            font-family: calibri;
+            font-size: 50%;
+            color: #510175;
+        }
+
+        .hero-search {
+            margin-top: 10px;
+        }
+
+        .hero-search input[type='text'] {
+            font-size: 22px;
+            font-family: calibri;
+            padding: 9px;
+            border: none;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 8px;
+            width: 45%;
+            height: 40px;
+            padding-right: 50px;
+            background-color: lightgray;
+            color: #510175;
+        }
+
+        .hero-search input[type="submit"] {
+            margin-left: -50px;
+            height: 58px;
+            width: 16%;
+            font-size: 22px;
+            font-family: calibri;
+            padding: 9px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: #510175;
+            color: white;
+            border: none;
+        }
+
+        .timer {
+            margin-top: 15px;
+            color: black;
+            text-align: center;
+            font-size: 300%;
+            font-weight: bold;
+        }
+        .social-icons {
+            width: 80%;
+            margin: 0px auto;
+            text-align: center;
+            background-color: #510175;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 0;
+        }
+        .social-icons span {
+            display: inline-block;
+            padding: 8px;
+            font-weight: bold;
+            padding-top: 25px;
+        }
+        .social-icons .nav   {
+            list-style-type: none;
+        }
+        .social-icons .nav li {
+            display: inline-block;
+            padding: 8px;
+        }
+        .social-icons .nav li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Hero Section Starts -->
+    <section class="hero">
+        <div class="hero-content">
+            <div>
+                <i class="fa fa-angellist hero-icon"></i>
+            </div>
+            <div class="hero-txt">
+                <span>Our Website is almost ready </span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam dolore eaque perspiciatis
+                    itaque, voluptate, expedita necessitatibus adipisci corporis totam.</p>
+            </div>
+            <hr style="background-color: #510175; height: 6px; border-radius: 20px; width: 180px; text-align: center;">
+
+            <!-- Timer Section Starts  -->
+            <div class="timer" data-date="April 20, 2022 12:00:00">
+            </div>
+            <!-- Timer Section Ends  -->
+
+            <!-- Email section starts  -->
+            <div class="hero-search">
+                <input type="text" placeholder="Email Address" name="email" id="email">
+                <input type="submit" value="GET NOTIFIED">
+            </div>
+            <!-- Email secttion Ends  -->
+
+            <!-- Footer Section Starts  -->
+            <div class="social-icons">
+            <span>Copyrights &copy; All rights Reserved</span>
+            <ul class="nav">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+            </ul>
+        </div>
+        <!-- Footer Section Ends  -->
+
+        </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+
+
+
+
+
+    
+    <script src="timer.js"></script>
+</body>
+
+</html>
