@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>We Are Getting Ready</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <style>
+        body {
+            background-color: black;
+            font-family: calibri;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .hero {
+            width: 100%;
+            background-color: rgb(22, 21, 21);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .hero-content {
+            width: 75%;
+            margin: 0px auto;
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        .hero-txt {
+            display: inline-block;
+            font-size: 300%;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .timer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 300%;
+            font-weight: bold;
+            font-family: monospace;
+            color: gray;
+        }
+        .social-icons {
+            width: 100%;
+            margin: 0px auto;
+            padding: 0px;
+            text-align: center;
+            background-color: transparent;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        .social-icons span {
+            display: inline-block;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 46px;
+            padding-top: 25px;
+        }
+        .social-icons .nav   {
+            list-style-type: none;
+        }
+        .social-icons .nav li {
+            display: inline-block;
+            padding: 8px;
+        }
+        .social-icons .nav li a {
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons .fa {
+            width: 20px;
+            height: 20px;
+            border: 2px solid white; 
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .btn-sub {
+            margin-top:2%;
+            color: white;
+            font-family: monospace;
+            background: -webkit-linear-gradient(rgb(12, 245, 113), skyblue);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            border-radius: 30px;
+            padding: 13px 26px;
+        }
+        .grd {
+            background: -webkit-linear-gradient(rgb(12, 245, 113), skyblue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <!-- Hero Section Starts -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Social Section Starts  -->
+            <div class="social-icons">
+                <span>VA<b style="color: aqua;">V</b>E</span>
+                <ul class="nav">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                </ul>
+            </div>
+            <!-- Social Section Ends  -->
+            <div class="hero-txt">
+                <span><ul style="display: inline-block; list-style-type: none; text-align: left; position: absolute; left: 0;">
+                    <li style="font-size: 23px;"><i class="fa fa-arrow-circle-right"><b style="font-family: calibri; font-size: 19px; padding: 10px;">HOME</b></i></li>
+                    <li style="font-size: 23px; margin-top: 7px;"><i class="fa fa-arrow-circle-down"></i></li>
+                    <li style="font-size: 23px; margin-top: 7px;"><i class="fa fa-arrow-circle-down"></i></li>
+                </ul></span>
+                <span>We're <br> <b class="grd">Getting Ready</b> <br> to Launch in </span>
+                <span><ul style="display: inline-block; list-style-type: none; text-align: left; position: absolute; right: 0; top: 120px;">
+                    <li style="font-size: 23px;"><i class="fa fa-cog"><b style="font-family: calibri; font-size: 19px; padding: 10px;">Settings</b></i></li>
+                </ul></span>
+            </div>
+            
+
+            <!-- Timer Section Starts  -->
+            <div class="timer" data-date="April 20, 2022 12:00:00">
+            </div>
+            <!-- Timer Section Ends  -->
+            <div>
+                <p style="font-size: 13px;">The VAVE is a beautiful coming soon template that <br> is designed by XPF with the colloboration of XYZ  <br> design cpn to come up with something unique.</p>
+            </div>
+
+            <!-- Btn section starts  -->
+            <div>
+                <button class="btn-sub">NOTIFY ME</button>
+            </div>
+            <!-- Btn secttion Ends  -->
+
+            <div>
+                <center style="font-weight: bold; font-size: 70%; color: lightgray; text-align: center; margin-top: 30px;">All rights reserved &copy;</center>
+            </div>
+
+            
+
+        </div>
+    </section>
+    <!-- Hero Section Ends -->
+  <script src="timer.js"></script>
+</body>
+
+</html>

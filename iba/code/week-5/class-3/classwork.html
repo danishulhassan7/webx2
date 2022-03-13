@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ClassWork</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: lightskyblue;
+            font-family: calibri;
+            padding: 0px;
+            margin: 0px;
+            font-size: 18px;
+        }
+
+        #stuData {
+            border-collapse: collapse;
+        }
+        #stuData td, #stuData th {
+            border-bottom: 1px solid lightgray;
+        }
+        #stuData tr:hover {
+            background-color: lightgreen;
+        }
+        #stuData tr:nth-child(even) {
+            background-color: lightcoral;
+        }
+        #myText {
+            display: none;
+            background-color: hotpink;
+            font-size: 20px;
+            width: 250px;
+        }
+        #myBox:hover #myText {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-shadow: 10px 20px rgba(0,190,0,0.5); font-variant: small-caps;">Pakistan Zindabad</h1>
+    <i class="fa fa-home" style="color: red; font-size: 40px;"></i>
+    <i class="fa fa-cloud"></i>
+    <i class="fa fa-facebook"></i>
+    <div id="myBox">
+        Show Students
+        <p id="myText">Some Text</p>
+    </div>
+
+    <div style="overflow-x: auto;">
+        <table id="stuData">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Student Name</th>
+                    <th>Class</th>
+                    <th>Section</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Kamran</td>
+                    <td colspan="2">9th</td>
+                </tr>
+
+                <tr>
+                    <td>865</td>
+                    <td>Abdullah</td>
+                    <td>10th</td>
+                    <td rowspan="2">A</td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>Irfan</td>
+                    <td>9th</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Zafar</td>
+                    <td>10th</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>51</td>
+                    <td>Shahid</td>
+                    <td>10th</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Students</td>
+                    <td>7</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <ul style="list-style-type: none; border-left: red solid 5px; padding-left: 10px; background-color: lightslategray;">
+        <li>Web Development</li>
+        <li>Freelancing</li>
+        <li>Digital Marketing</li>
+        <li>App Development</li>
+    </ul>
+</body>
+</html>

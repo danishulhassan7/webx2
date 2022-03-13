@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ClassWork - Transitions</title>
+    <style>
+        body {
+            background-color: mediumorchid;
+            font-family: calibri;
+            padding: 0px;
+            font-size: 18px;
+            margin: 12%;
+        }
+
+        #myBox {
+            width: 300px;
+            height: 200px;
+            border-radius: 30px;
+            text-align: center;
+            background-color: mediumspringgreen;
+            font-size: 30px;
+            color: white;
+
+            transition-duration: 3s;
+            transition-delay: 2s;
+            transition-property: width, font-size, text-shadow;
+            transition-timing-function: ease-in;
+        }
+
+        #myBox:hover {
+            background-color: lightcoral;
+            font-size: 42px;
+            text-shadow: 2px 3px #dddddd;
+            width: 620px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="myBox">PAKISTAN ZINDABAD</div>
+
+</body>
+</html>

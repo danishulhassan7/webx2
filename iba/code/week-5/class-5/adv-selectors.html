@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ClassWork - CSS Advance Selectors</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: calibri;
+            padding: 0px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .box1 p{
+            color: mediumorchid;
+        }
+        .box2>p {
+            color: aqua;
+        }
+        .box3 h1+p {
+            color: lightcoral;
+        }
+        .box4 h1~p {
+            color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <p>A se pehle wala</p>
+        <h1>Box:1 - Descendant</h1>
+        <p>A</p>
+        <p>B</p>
+        <div>
+            <p>C</p>
+        </div>
+    </div>
+
+    <div class="box2">
+        <p>A se pehle wala</p>
+        <h1>Box:2 - Child</h1>
+        <p>A</p>
+        <p>B</p>
+        <div>
+            <p>C</p>
+        </div>
+    </div>
+
+    <div class="box3">
+        <p>A se pehle wala</p>
+        <h1>Box:2 - Immediate Siblings</h1>
+        <p>A</p>
+        <p>B</p>
+        <div>
+            <p>C</p>
+        </div>
+    </div>
+
+    <div class="box4">
+        <p>A se pehle wala</p>
+        <h1>Box:2 - All Siblings</h1>
+        <p>A</p>
+        <p>B</p>
+        <div>
+            <p>C</p>
+        </div>
+    </div>
+
+</body>
+</html>
