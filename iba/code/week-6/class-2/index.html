@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   	 <title>JavaScript - Basics</title>
+<style>
+	body {
+    		background-color: mediumpurple;
+    		font-family: calibri;
+    		padding: 0px;
+    		margin: 0px;
+    	    	font-size: 18px;
+	}
+	.header {
+
+    		width: 100%;
+    		color: white;
+    		position: fixed;
+    		top: 0;
+	}
+	.res {
+		color:black;
+		text-align:center;
+		padding:30px;
+		font-size:24px;
+		font-weight:bold;
+	}
+</style>
+</head>
+<body>
+
+    	<section class="">
+	<p style="background-color:white; color:black; padding:20px; text-align:center; font-weight:bold; font-size:25px;"> 
+			Basic Arithmatic Operations <br> Considering: 
+			<br> Num1 = 2 <br> Num2 = 3
+	</p>
+  	<p id="result1" class="res"></p>
+	<p id="result2" class="res"></p>
+	<p id="result3" class="res"></p>
+	<p id="result4" class="res"></p>
+	<p id="result5" class="res"></p>
+	<p id="result6" class="res"></p>
+    	</section>
+
+	<script>
+		var num1 = 2;
+		var num2 = 3;
+		var add = num1 + num2;
+		var sub = num1 - num2;
+		var mul = num1 * num2;
+		var divide = num1 / num2;
+		var exp = num1 ** num2;
+		var sqr = 5 ** 2;
+		
+		
+		console.log("The sum of two numbers is: " + add);
+		console.log("The subtraction of two numbers is: " + sub);
+		console.log("The product of two numbers is: " + mul);
+		console.log("The division of two numbers is: " + divide);
+		console.log("The power of two numbers is: " + exp);
+		console.log("The square of 5 is: " + sqr);
+		
+		document.getElementById("result1").innerHTML = "The sum of two numbers is: " + add;
+		document.getElementById("result2").innerHTML = "The subtraction of two numbers is: " + sub;
+		document.getElementById("result3").innerHTML = "The product of two numbers is: " + mul;
+		document.getElementById("result4").innerHTML = "The division of two numbers is: " + divide;
+		document.getElementById("result5").innerHTML = "The power of two numbers is: " + exp;
+		document.getElementById("result6").innerHTML = "The square of 5 is: " + sqr;
+		
+		document.getElementById("result1").style.backgroundColor = "lightgreen";
+		document.getElementById("result2").style.backgroundColor = "orange";
+		document.getElementById("result3").style.backgroundColor = "lightgray";
+		document.getElementById("result4").style.backgroundColor = "slategray";
+		document.getElementById("result5").style.backgroundColor = "lightblue";
+		document.getElementById("result6").style.backgroundColor = "yellow"; 
+	</script>
+</body>
+</html>
