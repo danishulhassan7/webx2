@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript - Task-19</title>
+	<style>
+		body {
+			background-color: mediumpurple;
+			font-family: calibri;
+			padding: 0px;
+			margin: 0px;
+			font-size: 18px;
+		}
+
+		.res {
+			width: 30%;
+			margin: 0px auto;
+			color: black;
+			text-align: left;
+			padding: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			border-radius: 20px;
+			box-sizing: border-box;
+		}
+
+		#username {
+			background-color: lightgreen;
+			margin: 20px auto;
+			text-align: center;
+		}
+
+		#userage {
+			background-color: salmon;
+			margin: 20px auto;
+			text-align: center;
+
+		}
+
+		.courses .res {
+			border-bottom: 1px solid lightgray;
+			padding: 9px;
+			box-sizing: border-box;
+			background-color: lightseagreen;
+			color: #000;
+			border-radius: 0px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<section class="">
+		<p
+			style="background-color:white; color:black; padding:20px; text-align:center; font-weight:bold; font-size:25px;">
+			Taking inputs from user. <br> Using JavaScript!
+		</p>
+		<div style="background-color:mediumorchid; color:white; text-align: center; font-family: monospace; font-size: 27px; padding: 14px;">
+			<p>Marksheet <br> Total Marks 500</p>
+		</div>
+
+		<p id="username" class="res"></p>
+		<p id="userage" class="res"></p>
+
+		<div class="courses">
+		<p id="mlcourse" class="res"></p>
+		<p id="nlpcourse" class="res"></p>
+		<p id="madcourse" class="res"></p>
+		<p id="dmcourse" class="res"></p>
+		<p id="cccourse" class="res"></p>
+		</div>
+	</section>
+
+	<script>
+		var userName = prompt("Enter your Name");
+		var userAge = prompt("Enter your age");
+
+		var ml = parseInt(prompt("Enter the obtained marks of Machine Learning"));
+		var nlp = parseInt(prompt("Enter the obtained marks of Natural Language Processing"));
+		var mad = parseInt(prompt("Enter the obtained marks of Mobile Application Development"));
+		var dm = parseInt(prompt("Enter the obtained marks of Digital Marketing"));
+		var cc = parseInt(prompt("Enter the obtained marks of Compiler Construction"));
+
+		var total = 500;
+		var obt = ml + nlp + mad + dm + cc;
+		var per = (obt/total) * 100;
+
+		console.log("Obtained",obt);
+		console.log("Percentage", per)
+
+
+
+
+		console.log("Username: " +  userName);
+		console.log("UserAge: " + userAge);
+
+
+		document.getElementById("username").innerHTML = "Name: " + userName ;
+		document.getElementById("userage").innerHTML = "Age: " + userAge;
+
+		
+		document.getElementById("mlcourse").innerHTML = "Obtained marks in Machine Learning: " + ml;
+		document.getElementById("nlpcourse").innerHTML = "Obtained marks in Natural Language Processing: " + nlp;
+		document.getElementById("madcourse").innerHTML = "Obtained marks in Mobile Application Development: " + mad;
+		document.getElementById("dmcourse").innerHTML = "Obtained marks in Digital Marketing: " + dm;
+		document.getElementById("cccourse").innerHTML = "Obtained marks in Compiler Construction: " + cc;
+
+		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Total Marks: " + total + "</div>");
+
+		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Obtained Marks: " + obt + "</div>");
+		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Percentage: " + per.toFixed(2) + " %</div>");
+
+
+
+	</script>
+</body>
+
+</html>
