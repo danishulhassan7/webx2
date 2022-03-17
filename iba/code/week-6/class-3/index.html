@@ -13,7 +13,7 @@
 		}
 
 		.res {
-			width: 30%;
+			width: 40%;
 			margin: 0px auto;
 			color: black;
 			text-align: left;
@@ -22,6 +22,8 @@
 			font-weight: bold;
 			border-radius: 20px;
 			box-sizing: border-box;
+			border-top-left-radius: 10px;
+			border-bottom-right-radius: 10px;
 		}
 
 		#username {
@@ -45,6 +47,14 @@
 			color: #000;
 			border-radius: 0px;
 			font-size: 18px;
+		}
+		.courses .res:nth-child(1) {
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+		.courses .res:nth-last-child(1) {
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
 		}
 	</style>
 </head>
@@ -82,6 +92,21 @@
 		var dm = parseInt(prompt("Enter the obtained marks of Digital Marketing"));
 		var cc = parseInt(prompt("Enter the obtained marks of Compiler Construction"));
 
+		var check1 = (ml >= 30) ? "PASS"  : "FAIL";
+		var check2 = (nlp >= 30) ? "PASS"  : "FAIL";
+		var check3 = (mad >= 30) ? "PASS"  : "FAIL";
+		var check4 = (dm >= 30) ? "PASS"  : "FAIL";
+		var check5 = (cc >= 30) ? "PASS"  : "FAIL";
+
+
+		console.log(check1);
+		console.log(check2);
+		console.log(check3);
+		console.log(check4);
+		console.log(check5);
+
+
+
 		var total = 500;
 		var obt = ml + nlp + mad + dm + cc;
 		var per = (obt/total) * 100;
@@ -100,17 +125,18 @@
 		document.getElementById("userage").innerHTML = "Age: " + userAge;
 
 		
-		document.getElementById("mlcourse").innerHTML = "Obtained marks in Machine Learning: " + ml;
-		document.getElementById("nlpcourse").innerHTML = "Obtained marks in Natural Language Processing: " + nlp;
-		document.getElementById("madcourse").innerHTML = "Obtained marks in Mobile Application Development: " + mad;
-		document.getElementById("dmcourse").innerHTML = "Obtained marks in Digital Marketing: " + dm;
-		document.getElementById("cccourse").innerHTML = "Obtained marks in Compiler Construction: " + cc;
+		document.getElementById("mlcourse").innerHTML = "Machine Learning -> Marks:  " + ml + " Status: " + check1;
+		document.getElementById("nlpcourse").innerHTML = "Natural Language Processing -> Marks:  " + nlp + " Status: " + check2;
+		document.getElementById("madcourse").innerHTML = "Mobile App Development -> Marks:  " + mad + " Status: " + check3;
+		document.getElementById("dmcourse").innerHTML = "Digital Marketing -> Marks:  " + dm + " Status: " + check4;
+		document.getElementById("cccourse").innerHTML = "Compiler Construction -> Marks:  " + cc + " Status: " + check5;
 
 		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Total Marks: " + total + "</div>");
-
 		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Obtained Marks: " + obt + "</div>");
 		document.write("<div style='background-color:black; color:white; text-align:center; padding:8px; margin-top:20px;'>Percentage: " + per.toFixed(2) + " %</div>");
 
+
+		
 
 
 	</script>

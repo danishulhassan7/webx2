@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - Bsics</title>
+</head>
+<body>
+   <h1>Pakistan Zindabad</h1>
+   <div onclick="alert('Just clicked the Div Box')">Click the Div</div>
+   <button type="button" ondblclick="document.write('Some Output')">My Button</button>
+
+
+    <script>
+        // primitive data types examples 
+
+        var a = 7; // integer / number
+        var stuName = "Kamran Khan"; // String / Text
+        var x = 78.44; // Decimal / Floating point variable
+
+        // Composite Data Types 
+
+        var stuData = {
+            stuName : 'Ibrahim',
+            stuClass: '12th',
+            stuSection: 'D'
+        };
+
+        document.write('<br>');
+        document.write("Name: " + stuData.stuName);
+        document.write('<br>');
+        document.write("Class: " + stuData.stuClass);
+        document.write('<br>');
+        document.write("Section: " + stuData.stuSection);
+        document.write('<br>');
+
+        var b,c;
+        b = 5;
+
+        c = a + b;
+
+        document.write('Old Value of a: ', a);
+
+        a++;
+        document.write('<br>');
+        document.write('New Value of a :',a);
+
+        b += 3;
+        document.write('<br>');
+        document.write('New Value of B: ',b);
+        
+        document.write('<br>');
+        document.write('9 % 2: ', 9%2);
+
+        document.write('<br>');
+
+        if(b > 9) {
+            document.write('<br> You are Winner!');
+        } else if(b >= 5) {
+            document.write('<br> You are shortlisted!');
+        } else {
+            document.write('<br> Plz Try Again!');
+        }
+
+    </script>
+</body>
+</html>

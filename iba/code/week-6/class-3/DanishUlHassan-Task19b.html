@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kindergarten</title>
+</head>
+<body>
+    
+    <div>
+        <h1>kindergarten meaning</h1>
+        <p>(In Britain and Australia) an establishment where children below the age of compulsory education play and learn; a nursery school.</p>
+    </div>
+
+    <script>
+        var age = parseInt(prompt("Enter the age to check the eligibility"));
+        document.write("Age: ", age);
+        document.write("<br>")
+
+        if(age == 0) {
+            document.write("Zero is not a Valid Age");
+        }
+        else if(age < 3) {
+            document.write(" You are Eligbile");
+        } else if(age >= 3 && age < 100) {
+            document.write("You are not eligible");
+        }
+        else {
+            document.write("Please enter a valid age..")
+        }
+        
+    </script>
+    
+</body>
+</html>

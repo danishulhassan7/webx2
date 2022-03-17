@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marks</title>
+</head>
+<body>
+    
+    <div>
+        <h1>Marks</h1>
+    </div>
+
+    <script>
+        var marks = parseInt(prompt("Enter the marks"));
+        document.write("Marks: "+ marks + "<br>");
+
+        if(marks >= 30 && marks < 101) {
+            document.write(" You are Passed!");
+        } else if(marks < 30) {
+            document.write("You are Failed!");
+        }
+        else {
+            document.write("Please enter valid marks..")
+        }
+        
+    </script>
+    
+</body>
+</html>
