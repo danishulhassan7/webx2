@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS - Classwork</title>
+    <style>
+        body {
+            font-size: 24px;
+            background-color: rgb(230, 230, 117);
+            font-family: monospace;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="xyz">Some Text: </div>
+    <h1 id="myHead"></h1>
+
+    <script type="text/javascript">
+
+        var a = 3, b= 9;
+        document.write(a + ' + ' + b + ' = ' + (a+b));
+        document.getElementById('xyz').innerHTML += ' Change the text ! ';
+        document.write('<br>');
+        document.write('<br>');
+
+        if(a >= 18) {
+            document.write('You are eligible for CNIC.');
+        }
+        else {
+            document.write('You are NOT eligible for CNIC.');
+        }
+        document.write('<br>');
+        var c;
+
+        c = (a > b) ? 'A is greater than B' : 'B is greater than A';
+
+        document.write(c);
+        document.write('<br>');
+        
+
+        document.write(typeof c);
+        document.write('<br>');
+
+        document.getElementById('myHead').innerHTML = c + '<i> Text Changes using JS! </i> ';
+
+        var stuData = {
+            sName: 'Kamran Khan',
+            sClass: '10th',
+            eng: 67,
+            urdu: 76,
+            phy: 36
+        };
+        document.write(stuData.sName + ' ' + stuData.sClass);
+        
+
+    </script>
+
+</body>
+
+</html>
