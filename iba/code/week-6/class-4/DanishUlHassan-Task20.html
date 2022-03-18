@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript - Task20</title>
+    <style>
+        body {
+            font-size: 30px;
+            background-color: beige;
+            font-family: monospace;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        //Task 01
+        document.write('<h3>Task20 - Q:1</h3>');
+
+        var childAge = parseInt(prompt('Enter age to check the eligibility (kindergarten)'));
+        var underAge = 'You are eligible!';
+        var overAge = 'You are not eligible!';
+
+        childAge = (childAge < 3) ? document.write(underAge) : document.write(overAge);
+        //Task 02
+        document.write('<h3>Task20 - Q:2</h3>');
+
+        var marks = parseInt(prompt('Enter your marks of Web Dev.'));
+        var passMarks = 'PASS!';
+        var failMraks = 'FAILED!';
+
+        marks = (marks > 30) ? document.write(passMarks) : document.write(failMraks);
+
+        //Task 03
+        document.write('<h3>Task20 - Q:3</h3>');
+
+        var dAge = parseInt(prompt('Enter age to check the eligibility of Driving'));
+        var uAge = 'You are eligible to Drive!';
+        var oAge = 'You are not eligible Drive!';
+
+        childAge = (dAge > 18) ? document.write(uAge) : document.write(oAge);
+
+        // Task 04 
+        document.write('<h3>Task20 - Q:4</h3>');
+
+        var number = 50;
+        document.write('The value of "number" variable is: ' + number);
+
+    </script>
+    <div id="demo"></div>
+    <script>
+        //Task 05
+
+        var x = 5;
+        var y = 10;
+
+        document.getElementById('demo').innerHTML = ' <h3>Task20 - Q:5</h3> The sum of x: 5 and y: 10 is: ' + (x + y);
+    </script>
+
+
+
+    <script>
+
+        //Task 06
+        document.write('<h3>Task20 - Q:6</h3>');
+
+        var z = x + y;
+        document.write('The value of "z" variable is: ' + z);
+
+        //Task 07
+        document.write('<h3>Task20 - Q:7</h3>');
+
+        var firstName = 'John', lastName = 'Doe', age = 35;
+        document.write('FirstName: ' + firstName + '<br>LastName: ' + lastName + '<br>Age: ' + age);
+        document.write('<br>');
+
+
+        //Task 08
+        document.write('<h3>Task20 - Q:8</h3>');
+
+        var userData = {
+            firstName: 'Steven',
+            lastName: 'Smith',
+            userAge: '27',
+            userCity: 'Melbourne',
+            userCountry: 'Australia',
+            userProfession: 'Cricketer',
+            userRole: 'Right Handed Batter'
+        }
+
+        document.write('First Name: '+userData['firstName'] + '<br>');
+        document.write('Last Name: '+userData['lastName'] + '<br>');
+        document.write('Age: '+userData['userAge'] + '<br>');
+        document.write('City: '+userData['userCity'] + '<br>');
+        document.write('Country: '+userData['userCountry'] + '<br>');
+        document.write('Profession: '+userData['userProfession'] + '<br>');
+        document.write('Role: '+userData['userRole'] + '<br>');
+
+
+
+
+
+
+        //Task 09
+        document.write('<h3>Task20 - Q:9</h3>');
+
+
+        var person = {
+            name: 'John',
+            age: 50,
+        };
+
+        document.write(person.name + ' is ' + person.age + ' years old.');
+        document.write('<br>');
+
+
+        //Task 10
+        document.write('<h3>Task20 - Q:10</h3>');
+
+        var student = {
+            studentSection: "D",
+            studentId: 094
+        };
+
+        function objData() {
+            document.write('Section: ' + student['studentSection'] + ' Id: ' + student['studentId']);
+        }
+
+        objData();
+    </script>
+
+
+
+</body>
+
+</html>
