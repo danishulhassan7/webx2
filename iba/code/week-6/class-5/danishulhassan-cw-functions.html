@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS - Functions</title>
+    <style>
+        body {
+            font-size: 17px;
+            background-color: rgb(153, 195, 114);
+            font-family: monospace;
+            padding: 9px;
+        }
+    </style>
+</head>
+
+<body>
+
+ <h1>JavaScript - Functions</h1>
+
+    <script type="text/javascript">
+
+        // Functions in JS
+
+        // functions without parameters
+        document.write('<br> <b> Number1: 7 <br> Number2: 8 </b> <br>');
+        var a = 7, b = 8;
+        myCalc(); //Calling a function
+
+        function myCalc() {
+            document.write('<br>' + a + ' + ' + b + ' = ' + (a+b));
+            document.write('<br>' + a + ' - ' + b + ' = ' + (a-b));
+        }
+
+
+        // functions with parameters
+        document.write('<br> <br> <b> Number1: 5 <br> Number2: 10 </b> <br>');
+        calculator(5,10);
+
+        function calculator(x, y) {
+            document.write('<br>' + x + ' + ' + y + ' = ' + (x+y));
+            document.write('<br>' + x + ' - ' + y + ' = ' + (x-y));
+            document.write('<br>' + x + ' * ' + y + ' = ' + (x*y));
+            document.write('<br>' + x + ' / ' + y + ' = ' + (x/y).toFixed(2));
+            document.write('<br>' + x + ' % ' + y + ' = ' + (x%y));
+        }
+
+        document.write('<br> <br> <b> Number1: 300 <br> Number2: 10 </b> <br>');
+        calculator(300,10);
+    </script>
+
+</body>
+
+</html>
