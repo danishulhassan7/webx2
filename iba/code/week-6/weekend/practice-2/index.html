@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="abc">
+
+     </div>
+    <script>
+        // data types
+        // string, int, float, arrays, objects
+        //primitive data // single value 
+        //composite data types
+         var  ques = "What is your name?";
+         document.getElementById('abc').innerHTML = ques;
+
+        var a = 10;
+        var b = 20.5;
+
+        var c = a +b; 
+        document.write('c:' + c);
+
+        document.write('<br>');
+
+        var string = "htmlcssjs @iba";
+
+        document.write('String' + string);
+
+        var firstName = "Danish";
+        var lastName = "Ul Hassan";
+
+        document.write('<br>');
+        // document.write(firstName + lastName);
+
+        document.write('Fullname: ' + firstName + ' ' + lastName);
+                        // Fullname: Danish Ul Hassan
+
+
+        // ARRAYS
+
+        document.write('<br>');
+
+        // var number1 = 1;
+        // var number2 = 2;
+
+        var numbers = [1,2,3,4,5,6, "Shehroz", 565.4457];
+
+        // array starts with 0 index 
+        document.write('<br>');
+        
+        document.write('Arrays value at index : 0 --> ' + numbers[0]);
+        document.write('Arrays value at index : 4 --> ' + numbers[4]);
+        document.write('<br>');
+       
+        document.write('<br>');
+        document.write('Complete Array VAlues: ' + numbers );
+
+        // 2D arrays:
+
+        var ary2dd = new Array();
+
+        ary2dd[0] = [1,4,6,78,54,7];
+        ary2dd[1] = [9,54,47,7334737,37,3,73];
+        document.write('<br>' + 'Array 2d:: ' + ary2dd);
+
+
+        var ary2d = [ ['Haseeb', 'Shehroz', 'Jagdish'], ['Hammad', 23, 67, 98] ];
+
+        document.write('<br>' + 'Array 2d at index 0: ' + ary2d[0]);
+        document.write('<br>' + 'Array 2d ' + ary2d);
+
+
+        // Conventions 
+
+        // Legal names --> name, _name, Name, firstName, ary2d, ary_2d
+
+        // Illilgel names -- > 3name, &gsd, danish  ul hassan 
+
+
+        // Objects 
+
+
+        var myObject = {
+            car : 'Toyota',
+            model: 'Cr5',
+            year: 2021,
+            color: 'black',
+            func: function() {
+                return document.write('Hello World from inside object using annonymous function');
+            }
+        };
+
+        document.write('<br>');
+
+        document.write('<h1>Learning JavaScript Objects:</h1>');
+
+        document.write('<br> Car:  ' + myObject.car);
+        document.write('<br> Model:  ' + myObject.model);
+        document.write('<br> Year:  ' + myObject.year);
+        document.write('<br> Color:  ' + myObject.color);
+
+        document.write('<br> Model: ' + myObject['model']);
+        document.write('<br> Year: ' + myObject['year']);
+
+        document.write('<br> Color:  ' + myObject.func());
+
+
+
+        // Functions
+
+        // Reusability
+        // Maintainability
+        // Refactor
+        document.write('<h3> Functions </h3>')
+
+        fullName();
+
+
+        function fullName() {
+            var firstName = 'Hammad';
+            var lastName = 'Rathore';
+            var fName = firstName + ' ' + lastName;
+            document.write('<br> Full Name: ' + fName);
+        } 
+
+
+        fullName();
+
+
+        document.write('<h3> Functions with parameters </h3>')
+
+
+        var fname , lname;  //  Global Variable
+
+        function printFullName(fname, lname) { // parameters
+            var printFullNameVar = fname + ' ' + lname; // Local Variable
+            document.write('<br> Full Name Using Parameters: ' + printFullNameVar);
+        }
+        
+        printFullName('Zain','Khan');
+        printFullName('Shehzy', 'Faisy');
+        printFullName('Galaxy', 'iphone');
+
+
+
+        var drvingAge  = prompt('Enter age');
+
+        if( drvingAge >=18 ) {
+            document.write('<h3> Eligible</h3>');
+        } else if( drvingAge < 18) {
+            document.write('<h3> Not Eligible</h3>');
+        } else {
+            document.write('<h3>Please enter a valid input</h3>');
+        }
+
+        // Ternary operator
+
+        var kidAge = parseInt(prompt('Enter Kid Age'));
+
+        var inputAge = (kidAge > 5) ? 'Kid is Eligble' :  'Kid is not Eligble' ;
+                        // Condition  // True        // False
+
+        document.write('<br> Ternary operator: ' + inputAge);
+
+        
+
+
+
+        
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</body>
+</html>
