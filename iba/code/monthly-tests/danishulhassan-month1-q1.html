@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Monthly Question Test : 1</title>
+    <style>
+        body {
+            background-color: lightskyblue;
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        section {
+            width: 30%;
+            margin: 0px auto;
+            margin-top: 50px;
+            background-color: white;
+        }
+        form {
+            padding: 30px;
+        }
+        form label {
+            display: inline-block;
+            width: 100%;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .star {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .sm-txt {
+            font-size: 16px;
+            color: rgb(58, 56, 56);
+        }
+        .main-head {
+            background-color: lightgray;
+            padding: 10px 30px;
+            height: 130px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        form input[type='text'], form input[type='email'] {
+            width: 391px;
+            height: 26px;
+        }
+        .btn {
+            width: 30%;
+            margin: 0px auto;
+        }
+        .btn button {
+            background-color: rgb(104, 87, 57);
+            color: white;
+            border: none;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main-head">
+            <h1>Contact Us <br> <span class="sm-txt"> Please fill this form in decent manner</small></h1>
+            
+        </div>
+        <form>
+            <div>
+                <label for="fname">Full Name <span class="star"> * </span></label>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+
+            <div>
+                <label for="emailid">E-mail <span class="star"> * </span></label>
+                <input type="email" name="emailid" id="emailid" required> <br>
+                <small class="sm-txt">example@example.com</small>
+            </div>
+            <div>
+                <label for="msg">Message <span class="star"> * </span></label>
+                <textarea name="msg" id="msg" cols="51" rows="10"></textarea>
+            </div>
+            <div class="btn">
+                <button type="button"> SUBMIT </button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
