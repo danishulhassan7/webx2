@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript - Task21 Calculator</title>
+    <!-- FontAwesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    <!-- CSS  -->
+    <style>
+        body {
+    background-color: lightseagreen;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    width: 99.7%;
+    margin: 0px auto;
+}
+h1 {
+    text-align: center;
+}
+section {
+    text-align: center;
+    margin-top: 30px !important;
+    max-width: 410px;
+    margin: 0px auto;
+}
+
+form {
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(173, 236, 173);
+    box-shadow: inset 5px 5px 12px #96da9b, 5px 5px 12px rgb(20, 83, 29);
+}
+
+form input[type='text'] {
+    width: 270px;
+    padding: 20px 15px;
+    border: 3px solid lightseagreen;
+    border-radius: 20px;
+    font-family: monospace;
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+}
+::placeholder {
+    color: black;
+    text-align: right;
+    font-size: 25px;
+}
+
+.btn {
+    width: 97%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.btn .buttonn, .intnum {
+    display: inline-block !important;
+    width: 70px;
+    padding: 3px 12px;
+    border: none;
+    color: seagreen;
+    font-size: 300%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.intnumcl {
+    display: inline-block !important;
+    width: 86%;
+    padding: 3px 12px;
+    border: none;
+    color: seagreen;
+    font-size: 200%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- WRAPPER STARTS -->
+    <div id="wrapper">
+        <!-- Header Section Starts  -->
+        <!-- Header Section Ends -->
+
+
+        <!-- Main Section Starts -->
+        <!-- Main Section Ends -->
+
+        <section>
+            <form>
+                <input type="text" placeholder="0" name="txtArea" id="txtArea">
+                <div class="btn">
+                    <button type="button" class="intnum" onclick="showData('7');"> 7 </button>
+                    <button type="button" class="intnum" onclick="showData('8');"> 8 </button>
+                    <button type="button" class="intnum" onclick="showData('9');"> 9 </button>
+                    <button type="button" onclick="showData('/');" class="buttonn"> / </button>
+                    <br>
+                    <button type="button" class="intnum" onclick="showData('4');"> 4 </button>
+                    <button type="button" class="intnum" onclick="showData('5');"> 5 </button>
+                    <button type="button" class="intnum" onclick="showData('6');"> 6 </button>
+                    <button type="button" onclick="showData('*');" class="buttonn"> * </button>
+                    <br>
+                    <button type="button" class="intnum" onclick="showData('1');"> 1 </button>
+                    <button type="button" class="intnum" onclick="showData('2');"> 2 </button>
+                    <button type="button" class="intnum" onclick="showData('3');"> 3 </button>
+                    <button type="button" onclick="showData('-');" class="buttonn"> - </button>
+                    <br>
+                    <button type="button" class="intnum" onclick="showData('0');">0</button>
+                    <button type="button" class="intnum" onclick="showData('.');">.</button>
+                    <button type="button" onclick="showData('+');" class="buttonn intnum"> + </button>
+                    <button type="button" onclick="mainCalc();" class="buttonn intnum"> = </button>
+                    <br>
+                    <button type="button" onclick="clrData();" class="intnumcl"> Clear </button>
+                    <button type="button" onclick="dltData();" class="intnumcl"> Delete </button>
+                </div>
+            </form>
+        </section>
+
+
+        <!-- Footer Section Starts -->
+        <!-- Footer Section Ends -->
+
+    </div>
+    <!-- WRAPPER ENDS -->
+
+    <script>
+
+        var textArea = document.getElementById('txtArea');
+
+        function showData(getValue) {
+            textArea.value += getValue;
+        }
+
+        function mainCalc() {
+            try {
+                textArea.value = eval(textArea.value);
+            }
+            catch (e) {
+                alert('Something Went Wrong !!');
+            }
+        }
+
+        function clrData() {
+            textArea.value = '';
+        }
+
+        function dltData() {
+            textArea.value = textArea.value.slice(0, -1);
+        }
+
+
+
+
+
+// var num1, num2, resultScreen;
+
+// function getDataFromUser() {
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Hello World';
+// }
+
+
+// function n7() {
+//     resultScreen = document.getElementById('txtArea');
+//     var n7 = document.getElementById('n7').innerHTML;
+//     n7.value = resultScreen;
+//     console.log(resultScreen);
+//     console.log(n7)
+// }
+
+
+
+// function additionFunc(num1, num2) {
+//     var num1 = parseInt(prompt('Enter number 1'));
+//     var num2 = parseInt(prompt('Enter number 2'));
+//     var res = num1 + num2;
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Result: ' + res;
+// }
+
+// function subtractionFunc(num1, num2) {
+//     var num1 = parseInt(prompt('Enter number 1'));
+//     var num2 = parseInt(prompt('Enter number 2'));
+//     var res = num1 - num2;
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Result: ' + res;
+// }
+
+// function multiplicationFunc(num1, num2) {
+//     var num1 = parseInt(prompt('Enter number 1'));
+//     var num2 = parseInt(prompt('Enter number 2'));
+//     var res = num1 * num2;
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Result: ' + res;
+// }
+
+// function divisionFunc(num1, num2) {
+//     var num1 = parseInt(prompt('Enter number 1'));
+//     var num2 = parseInt(prompt('Enter number 2'));
+//     var res = num1 / num2;
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Result: ' + res;
+// }
+
+// function remainderFunc(num1, num2) {
+//     var num1 = parseInt(prompt('Enter number 1'));
+//     var num2 = parseInt(prompt('Enter number 2'));
+//     var res = num1 % num2;
+//     resultScreen = document.getElementById('txtArea');
+//     resultScreen.value = 'Result: ' + res;
+// }
+
+
+
+    </script>
+</body>
+
+</html>
