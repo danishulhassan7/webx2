@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>JavaScript - Task22</title>
     <!-- FontAwesome Icons  -->
@@ -7,18 +8,23 @@
     <!-- Google Fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- FavIcon -->
-    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="icon" href="logo.png" type="image/png">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
-    <!-- Header Section Starts  -->
-    <!-- Header Section Ends -->
-
-
-    <!-- Main Section Starts -->
     <div id="wrapper">
+
+        <!-- Header Section Starts  -->
+        <header>
+            <h1>Enter details to check result</h1>
+        </header>
+        <!-- Header Section Ends -->
+
+
+        <!-- Main Section Starts -->
+
         <section class="marksheet">
             <form action="" name="marksheetData">
                 <div>
@@ -26,61 +32,129 @@
                     <input type="text" name="studentName" id="studentName" required>
                 </div>
                 <div>
+                    <label for="studentEmail">Email</label>
+                    <input type="email" name="studentEmail" id="studentEmail" required>
+                </div>
+                <div>
+                    <label for="studentId">Student Id</label>
+                    <input type="text" name="studentId" id="studentId" required>
+                </div>
+                <div>
                     <label for="studentAge">Age</label>
-                    <input type="text" name="studentAge" id="studentAge" required>
+                    <input type="number" name="studentAge" id="studentAge" required>
                 </div>
                 <div>
                     <label for="mathsMarks">Maths</label>
-                    <input type="text" name="mathsMarks" id="mathsMarks" required>
+                    <input type="number" name="mathsMarks" id="mathsMarks" required>
                 </div>
                 <div>
                     <label for="scienceMarks">Science</label>
-                    <input type="text" name="scienceMarks" id="scienceMarks" required>
+                    <input type="number" name="scienceMarks" id="scienceMarks" required>
                 </div>
                 <div>
                     <label for="historyMarks">History</label>
-                    <input type="text" name="historyMarks" id="historyMarks" required>
+                    <input type="number" name="historyMarks" id="historyMarks" required>
                 </div>
                 <div>
                     <label for="englishMarks">English</label>
-                    <input type="text" name="englishMarks" id="englishMarks">
+                    <input type="number" name="englishMarks" id="englishMarks" required>
                 </div>
                 <div>
                     <label for="physicsMarks">Physics</label>
-                    <input type="text" name="physicsMarks" id="physicsMarks">
+                    <input type="number" name="physicsMarks" id="physicsMarks" required>
                 </div>
                 <!-- <div>
                     <label for="totalMarks">Total</label>
-                    <input type="text" name="totalMarks" id="totalMarks">
+                    <input type="number" name="totalMarks" id="totalMarks">
                 </div>
                 <div>
                     <label for="studentPercentage">Percentage</label>
-                    <input type="text" name="studentPercentage" id="studentPercentage">
+                    <input type="number" name="studentPercentage" id="studentPercentage">
                 </div> -->
-                <div>
-                    <button type="button" id="showResult" name="showResult"  onclick="gettingMarksheetData();">Show Result</button>
+                <div style="margin-bottom: 50px;">
+                    <button type="button" id="showResult" name="showResult" onclick="gettingMarksheetData();">Show Result</button>
                 </div>
             </form>
         </section>
 
-        <section>
-            <p id="showStudentName"></p>
-            <p id="showStudentAge"></p>
-            <p id="showMathsMarks"></p>
-            <p id="showScienceMarks"></p>
-            <p id="showHistoryMarks"></p>
-            <p id="showEnglishMarks"></p>
-            <p id="showPhysicsMarks"></p>
-            <p id="showTotalMarks"></p>
-            <p id="showPercentage"></p>
-        </section>
-    <!-- Main Section Ends -->
-</div>
+        <section style="overflow-x:auto;">
+            <div class="flex-status">
+                <div>
+                    <h1 id="statusResult" style="color: white; border-radius: 30px; width: 250px; text-align: center; font-variant: small-caps;"></h1>
+                </div>
+                <div>
+                    <h1 id="statusGrade" style="color: white; border-radius: 30px; width: 250px; text-align: center; font-variant: small-caps;"></h1>
+                </div>
+            </div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Student Id</th>
+                        <th>Age</th>
+                        <th>Maths</th>
+                        <th>Science</th>
+                        <th>History</th>
+                        <th>English</th>
+                        <th>Physics</th>
+                        <th>Total</th>
+                        <th>Percentage</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td id="showStudentName"></td>
+                        <td id="showStudentEmail"></td>
+                        <td id="showStudentId"></td>
+                        <td id="showStudentAge"></td>
+                        <td id="showMathsMarks"></td>
+                        <td id="showScienceMarks"></td>
+                        <td id="showHistoryMarks"></td>
+                        <td id="showEnglishMarks"></td>
+                        <td id="showPhysicsMarks"></td>
+                        <td id="showTotalMarks"></td>
+                        <td id="showPercentage"></td>
+                        <td style="width: 13%; margin: 0px auto; text-align: center;"> 
+                            <button type="button" id="removeResult" name="removeResult" onclick="removeMarksheetData();">Remove Result</button>
+                        </td>
+                    </tr>
 
-    
+                    <tr style="font-weight: bolder !important;">
+                        <td colspan="5"></td>
+                        <td id="mathsPercentage">%</td>
+                        <td id="sciencePercentage">%</td>
+                        <td id="historyPercentage">%</td>
+                        <td id="englishPercentage">%</td>
+                        <td id="physicsPercentage">%</td>
+                        <td colspan="3"></td>
+                    </tr>
+
+                    <tr style="font-weight: bolder !important;">
+                        <td colspan="5"></td>
+                        <td id="mathsResult">TBA</td>
+                        <td id="scienceResult">TBA</td>
+                        <td id="historyResult">TBA</td>
+                        <td id="englishResult">TBA</td>
+                        <td id="physicsResult">TBA</td>
+                        <td colspan="3"></td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </section>
+        <!-- Main Section Ends -->
+    </div>
+
+
     <!-- Footer Section Starts -->
     <!-- Footer Section Ends -->
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

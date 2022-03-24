@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS - Classwork Loops</title>
+</head>
+
+<body>
+    <div id="myBox">Click Me</div>
+    <h1 id="output"></h1>
+    <script>
+        document.write('<h1>AddEventListener</h1>');
+
+        document.getElementById('myBox').addEventListener('click', calc);
+        function calc() {
+            document.getElementById('output').innerHTML = 2 + 5;
+        }
+
+        document.write('<h1>Switch Case</h1>');
+        var a = '1';
+
+        switch (a) {
+            case '1':
+                document.write('Selected day is: ');
+                document.write('Monday');
+                break;
+
+            case '2':
+                document.write('Tuesday');
+                break;
+            case '3':
+                document.write('Wednesday');
+                break;
+            default:
+                document.write('Invalid selection');
+        }
+
+        document.write('<h1>While Loop</h1>');
+
+        var i = 7; //initalization
+        while (i < 11) { //condition
+            document.write('<br>');
+            document.write(i + '. Pakistan Zindabad <br>');
+            i = i + 0.5; //increment
+        }
+
+
+        document.write('<h1>For Loop</h1>');
+        var x;
+
+        for (x = 0; x < 8; x = x + 1) {
+            document.write('<br> Pakistan Zindabad <br>');
+        }
+
+        document.write('<h1>Do While Loop</h1>');
+
+        var z = 7; //initalization
+
+        do{ 
+            document.write('<br>');
+            document.write(z + '. Pakistan Zindabad <br>');
+            z = z + 0.5;
+        }while (z > 11);
+
+    </script>
+</body>
+
+</html>
