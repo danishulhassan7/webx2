@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript - Task22</title>
+    <!-- FontAwesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- FavIcon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header Section Starts  -->
+    <!-- Header Section Ends -->
+
+
+    <!-- Main Section Starts -->
+    <div id="wrapper">
+        <section class="marksheet">
+            <form action="" name="marksheetData">
+                <div>
+                    <label for="studentName">Name</label>
+                    <input type="text" name="studentName" id="studentName" required>
+                </div>
+                <div>
+                    <label for="studentAge">Age</label>
+                    <input type="text" name="studentAge" id="studentAge" required>
+                </div>
+                <div>
+                    <label for="mathsMarks">Maths</label>
+                    <input type="text" name="mathsMarks" id="mathsMarks" required>
+                </div>
+                <div>
+                    <label for="scienceMarks">Science</label>
+                    <input type="text" name="scienceMarks" id="scienceMarks" required>
+                </div>
+                <div>
+                    <label for="historyMarks">History</label>
+                    <input type="text" name="historyMarks" id="historyMarks" required>
+                </div>
+                <div>
+                    <label for="englishMarks">English</label>
+                    <input type="text" name="englishMarks" id="englishMarks">
+                </div>
+                <div>
+                    <label for="physicsMarks">Physics</label>
+                    <input type="text" name="physicsMarks" id="physicsMarks">
+                </div>
+                <!-- <div>
+                    <label for="totalMarks">Total</label>
+                    <input type="text" name="totalMarks" id="totalMarks">
+                </div>
+                <div>
+                    <label for="studentPercentage">Percentage</label>
+                    <input type="text" name="studentPercentage" id="studentPercentage">
+                </div> -->
+                <div>
+                    <button type="button" id="showResult" name="showResult"  onclick="gettingMarksheetData();">Show Result</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <p id="showStudentName"></p>
+            <p id="showStudentAge"></p>
+            <p id="showMathsMarks"></p>
+            <p id="showScienceMarks"></p>
+            <p id="showHistoryMarks"></p>
+            <p id="showEnglishMarks"></p>
+            <p id="showPhysicsMarks"></p>
+            <p id="showTotalMarks"></p>
+            <p id="showPercentage"></p>
+        </section>
+    <!-- Main Section Ends -->
+</div>
+
+    
+    <!-- Footer Section Starts -->
+    <!-- Footer Section Ends -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
