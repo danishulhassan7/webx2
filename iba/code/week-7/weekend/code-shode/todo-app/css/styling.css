@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Varela Round', sans-serif;
+    background-color: aqua;
+    background-image: url(../Whatsapp-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#todo-app .wh {
+    height: 90vh;
+    background-color: rgb(120, 221, 191);
+    border: 3px solid rgb(223, 219, 211);
+    box-shadow: 3px 2px 2px rgb(156, 6, 243);
+    border-radius: 30px;
+}
+
+.hero-text {
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    font-size: 37px;
+    box-shadow: 2px rgb(218, 216, 216);
+}
+
+.Editbtn,
+.delBtn {
+    margin-left: 3px;
+    padding: 2px 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 2px 2px rgb(12, 2, 20);
+    cursor: pointer;
+}
+
+.delBtn {
+    float: right;
+    background-color: rgb(221, 14, 14);
+    color: #ffffff;
+}
+
+.Editbtn {
+    float: right;
+    background-color: rgb(78, 172, 189);
+    color: rgb(0, 0, 0);
+}
+
+ul li {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.delBtn:hover {
+    float: right;
+    background-color: rgb(221, 95, 95);
+    color: #ffffff;
+}
+
+.Editbtn:hover {
+    float: right;
+    background-color: rgb(58, 214, 241);
+    color: #ffffff;
+}
+
+form {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (max-width:685px) {
+    #todo-app .wh {
+        background-color: rgb(144, 230, 238);
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:385px) {
+    #todo-app .wh {
+        background-color: rgb(234, 166, 240);
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Editbtn,
+    .delBtn {
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+    }
+}

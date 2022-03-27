@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Important Meta Tags -->
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Description Meta Tag  -->
+    <meta name="description" content="My Blogging Website, where you find all the trending blogs">
+    <meta name="keywords" content="My Blogging Website, where you find all the trending blogss">
+    <meta name="author" content="My Blogging Website">
+    <!-- BootStrap CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/97acf97beb.js"></script>
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- BootStrap-Social  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <link rel="stylesheet" href="css/styling.css">
+    <title>Todo App</title>
+    <!-- Firebase  -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <!-- Database  -->
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+    <section id="todo-app">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="offset-md-3 col-md-6 mt-1 wh">
+                    <h1 class="text-center display-4 text-dark hero-text my-3">Todo Application</h1>
+                    <form action="#" class="text-center">
+                        <div class="form-group text-center">
+                            <input type="text" id="todo-input" name="todo-input" placeholder="Type here" class="form-control">
+                            <div class="">
+                                <button class=" btn btn-primary ml-1 btn-block mt-2 " onclick="addTodo();" id="task_add_item"><i class="fas fa-plus "></i> ADD ITEM</button>
+                                <button class="btn btn-dark ml-1 btn-block mt-1 " onclick="deleteAll();"><i class="fas fa-trash-alt "></i> DELETE ALL</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        <ul id="list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div>
+        <input type="text" id="todo-input">
+        <button onclick="addTodo();">ADD ITEM</button>
+        <button onclick="deleteAll();">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div> -->
+
+
+
+    <!-- First jquery, then popper and in last BootStrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
