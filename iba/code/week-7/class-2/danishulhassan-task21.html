@@ -100,6 +100,7 @@ form input[type='text'] {
         <!-- Main Section Ends -->
 
         <section>
+            <input type="button" onClick="show()" name="showbutton" value="show" />
             <form>
                 <input type="text" placeholder="0" name="txtArea" id="txtArea">
                 <div class="btn">
@@ -161,8 +162,20 @@ form input[type='text'] {
             textArea.value = textArea.value.slice(0, -1);
         }
 
+        
 
 
+        // selector
+
+        var mycalc = document.querySelector('.mycalc');
+
+        // Event Listeners
+
+        mycalc.addEventListener('click', disCalc);
+
+        function disCalc() {
+            mycalc.style.display = "block";
+        }
 
 
 // var num1, num2, resultScreen;
