@@ -32,6 +32,9 @@
         </div>
         <p id="my1"></p>
         <p id="my2"></p>
+
+        <p id="my3"></p>
+        <p id="my4"></p>
     </form>
     <script>
         let movies = [];
@@ -54,18 +57,14 @@
                 pre.textContent = movies;
             }
 
-            // pre.textContent = '\n' + JSON.stringify(movies, '\t', 2);
-            
-            document.getElementById('msg').innerHTML = movies[0]['title'];
-            document.getElementById('msg1').innerHTML = movies[0]['year'];
+            pre.textContent = '\n' + JSON.stringify(movies, '\t', 1);
 
-            document.getElementById('my1').innerHTML = movies[0]['title'];
-            document.getElementById('my2').innerHTML = movies[0]['year'];
 
             //saving to localStorage
             localStorage.setItem('MyMovieList', JSON.stringify(movies) );
-        }
 
+
+        }
         document.addEventListener('DOMContentLoaded', ()=>{
             document.getElementById('btn').addEventListener('click', addMovie);
         });

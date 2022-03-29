@@ -11,6 +11,24 @@
     <link rel="icon" href="logo.png" type="image/png">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <style>
+    .btn {
+    background-color: rgb(13, 57, 177);
+    font-size: large;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+form {
+    display: none;
+}
+
+    </style>
 </head>
 
 <body>
@@ -18,7 +36,11 @@
 
         <!-- Header Section Starts  -->
         <header>
+            
             <h1>Enter details to check result</h1>
+            <div>
+                <button  class="btn" id="displayBtn">Click here to open form</button>
+            </div>
         </header>
         <!-- Header Section Ends -->
 
@@ -26,18 +48,18 @@
         <!-- Main Section Starts -->
 
         <section class="marksheet">
-            <form action="" name="marksheetData">
+            <form action="" name="marksheetData" id="form">
                 <div>
                     <label for="studentName">Name</label>
-                    <input type="text" name="studentName" id="studentName" required>
+                    <input type="text" name="studentName" id="studentName" class="input-todo-item" required>
                 </div>
                 <div>
                     <label for="studentEmail">Email</label>
-                    <input type="email" name="studentEmail" id="studentEmail" required>
+                    <input type="email" name="studentEmail" id="studentEmail" class="input-todo-item" required>
                 </div>
                 <div>
                     <label for="studentId">Student Id</label>
-                    <input type="text" name="studentId" id="studentId" required>
+                    <input type="text" name="studentId" id="studentId" class="input-todo-item" required>
                 </div>
                 <div>
                     <label for="studentAge">Age</label>
@@ -72,7 +94,7 @@
                     <input type="number" name="studentPercentage" id="studentPercentage">
                 </div> -->
                 <div style="margin-bottom: 50px;">
-                    <button type="button" id="showResult" name="showResult" onclick="gettingMarksheetData();">Show Result</button>
+                    <button type="button" id="showResult" class="add-todo-btn" name="showResult" >Show Result</button>
                 </div>
             </form>
         </section>
@@ -86,7 +108,7 @@
                     <h1 id="statusGrade" style="color: white; border-radius: 30px; width: 250px; text-align: center; font-variant: small-caps;"></h1>
                 </div>
             </div>
-            <table border="1">
+            <!-- <table border="1" id="tabb">
                 <thead>
                     <tr>
                         <th>S.No.</th>
@@ -145,16 +167,41 @@
 
 
                 </tbody>
-            </table>
+            </table> -->
         </section>
+
+        <p id="sec">
+        </p>
+        <p><span id="obtm"> </span></p>
+        <p><span id="perm"> </span></p>
+
         <!-- Main Section Ends -->
+        <table class="table table-striped" id="memberList">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Id</th>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>History</th>
+                    <th>English</th>
+                    <th>Physics</th>
+                  </tr>
+            </thead>
+            <tbody id="myObjData">
+
+            </tbody>
+          </table>
     </div>
 
 
     <!-- Footer Section Starts -->
     <!-- Footer Section Ends -->
-
-    <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/app.js"></script>
+    
 </body>
 
 </html>
