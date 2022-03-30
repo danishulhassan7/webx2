@@ -27,7 +27,14 @@
 form {
     display: none;
 }
-
+td:last-child {
+    background-color: rgb(199, 14, 14);
+    color:rgb(255, 254, 254);
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-variant: small-caps;
+}
     </style>
 </head>
 
@@ -99,85 +106,12 @@ form {
             </form>
         </section>
 
-        <section style="overflow-x:auto;">
-            <div class="flex-status">
-                <div>
-                    <h1 id="statusResult" style="color: white; border-radius: 30px; width: 250px; text-align: center; font-variant: small-caps;"></h1>
-                </div>
-                <div>
-                    <h1 id="statusGrade" style="color: white; border-radius: 30px; width: 250px; text-align: center; font-variant: small-caps;"></h1>
-                </div>
-            </div>
-            <!-- <table border="1" id="tabb">
-                <thead>
-                    <tr>
-                        <th>S.No.</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Student Id</th>
-                        <th>Age</th>
-                        <th>Maths</th>
-                        <th>Science</th>
-                        <th>History</th>
-                        <th>English</th>
-                        <th>Physics</th>
-                        <th>Total</th>
-                        <th>Percentage</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>001</td>
-                        <td id="showStudentName"></td>
-                        <td id="showStudentEmail"></td>
-                        <td id="showStudentId"></td>
-                        <td id="showStudentAge"></td>
-                        <td id="showMathsMarks"></td>
-                        <td id="showScienceMarks"></td>
-                        <td id="showHistoryMarks"></td>
-                        <td id="showEnglishMarks"></td>
-                        <td id="showPhysicsMarks"></td>
-                        <td id="showTotalMarks"></td>
-                        <td id="showPercentage"></td>
-                        <td style="width: 13%; margin: 0px auto; text-align: center;"> 
-                            <button type="button" id="removeResult" name="removeResult" onclick="removeMarksheetData();">Remove Result</button>
-                        </td>
-                    </tr>
-
-                    <tr style="font-weight: bolder !important;">
-                        <td colspan="5"></td>
-                        <td id="mathsPercentage">%</td>
-                        <td id="sciencePercentage">%</td>
-                        <td id="historyPercentage">%</td>
-                        <td id="englishPercentage">%</td>
-                        <td id="physicsPercentage">%</td>
-                        <td colspan="3"></td>
-                    </tr>
-
-                    <tr style="font-weight: bolder !important;">
-                        <td colspan="5"></td>
-                        <td id="mathsResult">TBA</td>
-                        <td id="scienceResult">TBA</td>
-                        <td id="historyResult">TBA</td>
-                        <td id="englishResult">TBA</td>
-                        <td id="physicsResult">TBA</td>
-                        <td colspan="3"></td>
-                    </tr>
-
-
-                </tbody>
-            </table> -->
-        </section>
-
         <p id="sec">
         </p>
         <p><span id="obtm"> </span></p>
         <p><span id="perm"> </span></p>
 
-        <!-- Main Section Ends -->
-        <table class="table table-striped" id="memberList">
-            <thead>
+        <table class="table table-striped" id="ttable">
                 <tr>
                     <th>Name</th>
                     <th>Email</th>
@@ -188,11 +122,8 @@ form {
                     <th>History</th>
                     <th>English</th>
                     <th>Physics</th>
+                    <td>Action</td>
                   </tr>
-            </thead>
-            <tbody id="myObjData">
-
-            </tbody>
           </table>
     </div>
 
@@ -201,7 +132,7 @@ form {
     <!-- Footer Section Ends -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/app.js"></script>
-    
+   
 </body>
 
 </html>

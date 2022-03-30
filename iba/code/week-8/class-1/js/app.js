@@ -16,6 +16,7 @@ const addstudata = (ev) => {
         c3: document.getElementById("historyMarks").value,
         c4: document.getElementById("englishMarks").value,
         c5: document.getElementById("physicsMarks").value,
+        remove: "remove",
         obt: function () {
             var x = parseInt(this.c1) + parseInt(this.c2) + parseInt(this.c3) + parseInt(this.c4) + parseInt(this.c5);
             return document.getElementById('obtm').innerHTML = 'Obtained Marks: ' + x;
@@ -65,7 +66,7 @@ const addstudata = (ev) => {
     // console.log(studata.obt());
     // console.log(studata.per());
 
-    var cols = ['title', 'email', 'age', 'sid', 'c1', 'c2', 'c3', 'c4', 'c5'];
+    var cols = ['title', 'email', 'age', 'sid', 'c1', 'c2', 'c3', 'c4', 'c5', 'remove'];
 
     for (var i = 0; i < studentResultData.length; i++) {
     $('table').append('<tr></tr>');
@@ -74,6 +75,7 @@ const addstudata = (ev) => {
     $('table tr:last-child').append('<td>' + studentResultData[i][cols[j]] + '</td>');
     }
     }
+    
 
     // Displaying the array of object data in html table
 
@@ -104,4 +106,23 @@ function display() {
         document.getElementById('form').style.display = "none";
         return data = 1;
     }
+}
+
+
+
+var index, ttable = document.getElementById('ttable');
+for(var i = 1; i < ttable.rows.length; i++)
+{
+    ttable.rows[i].cells[9].onclick = function()
+    {
+        var c = confirm("do you want to delete this row");
+        if(c === true)
+        {
+            index = this.parentElement.rowIndex;
+            ttable.deleteRow(index);
+        }
+        
+        //console.log(index);
+    };
+    
 }
