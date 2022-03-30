@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript - Task24</title>
+</head>
+
+<body>
+
+    <h1 class="title"></h1>
+
+    <script>
+        var title = 'JavaScript - Task 24';
+        document.querySelectorAll('h1')[0].innerHTML = title;
+        document.querySelectorAll('h1')[0].style = "color: brown; text-align:center;";
+
+
+
+        var stars = 5;
+        var data = "";
+
+        for (var i = 0; i <= stars; i++) {
+            for (var j = stars; j > i; j--) {
+                data += "&nbsp;";
+            }        
+            for (var k = 1; k < (i * 1)+1; k++) {
+                data += "*";
+            }
+            data += "<br>";
+        }
+        console.log('First 5 lines');
+        console.log(data);
+
+        for (var i = 1; i <= stars - 1; i++) {
+            for (var j = 0; j < i; j++) {
+                data += "&nbsp;";
+            }
+            for (var k = (stars - i) * 1 ; k > 0; k--) {
+                data += "*";
+            }
+            data += "<br>";
+        }
+        console.log('Next 5 lines');
+        console.log(data);
+        document.write('<h2 style="color:darkcyan; text-align:center;">Stars Pattern</h2>');
+        document.write('<h1 style="color:darkcyan; font-size:3rem; width:7%; margin:0px auto;"> ' + data + ' </h1>');
+
+
+    </script>
+</body>
+
+</html>
