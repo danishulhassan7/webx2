@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js : Classwork - Maps</title>
+</head>
+
+<body>
+    <button type="button" onclick="window.print()">Click here to print this page</button>
+    <button type="button" ondblclick="window.close()">Close</button>
+
+    <h1>Method 01</h1>
+    <div id="mapDiv" style="width: 550px; border: 3px solid lightgray; height: 430px;"></div>
+
+
+    <h1>Method 02: Using Iframe </h1>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d452.48871685643485!2d67.02541794398553!3d24.866932323323294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f97afe42ad1fcbb!2sIBA%20City%20Campus!5e0!3m2!1sen!2s!4v1648664470447!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script>
+        document.write('<br> File Location: ' + window.location.href + '<br>')
+        document.write('<br> Protocol: ' + window.location.protocol + '<br>')
+
+        function myMap() {
+            var myCenter = new google.maps.LatLng(33.7177217, 73.0722664);
+            var mapCanvas = document.getElementById("mapDiv");
+            var mapOptions = { center: myCenter, zoom: 17 };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content: "Pakistan Map"
+            });
+            infowindow.open(map, marker);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvp526HPgr-YDvdRtF5Bpt6YB4NSbgzYQ&callback=myMap"></script>
+</body>
+
+</html>

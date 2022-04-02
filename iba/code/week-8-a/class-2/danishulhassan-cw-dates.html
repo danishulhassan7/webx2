@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS - Classwork Dates</title>
+</head>
+
+<body>
+
+    <h1 class="abc">Dates in JS</h1>
+    <script>
+        document.querySelector('h1').style.background = 'yellow';
+
+        var d = new Date();
+        document.write('<b>Date: </b>' + d + '<br>');
+
+        var dt = new Date('2015/05/28');
+        document.write('<b>Custom Date: </b>' + dt + '<br>');
+
+        document.write('<b>Current Year: </b>' + dt.getYear() + '<br>');
+        document.write('<b>Current Year: </b>' + dt.getFullYear() + '<br>');
+        document.write('<b>Current Date: </b>' + dt.getDate() + '<br>');
+        document.write('<b>Current Month: </b>' + dt.getMonth() + '<br>');
+
+        var month= ["January","February","March","April","May","June","July", "August","September","October","November","December"];
+        document.write('<b>Current Month: </b>' + month[dt.getMonth()] + '<br>');
+
+        document.write('<b>Current Day of Week: </b>' + dt.getDay() + '<br>');
+        dt.setMonth(11);
+        document.write('<b>Current Month: </b>' + month[dt.getMonth()] + '<br>');
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

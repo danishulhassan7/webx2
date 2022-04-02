@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS - Classwork Selectors</title>
+</head>
+
+<body>
+    <div>
+        <p>Pakistan Zindabad</p>
+        <p>Writing something</p>
+    </div>
+    <p class="abc">IBA Web Development Course</p>
+    <h1 class="abc">Some Heading</h1>
+    <p>Another paragraph</p>
+    <script>
+        document.getElementsByTagName('p')[3].innerHTML = 'Working (changing paragraph value)';
+        document.getElementsByTagName('p')[3].style.background = 'cyan';
+
+        document.getElementsByClassName('abc')[0].style.background = 'orange';
+        document.querySelectorAll('div p')[0].style.background = 'yellow';
+
+
+    </script>
+</body>
+
+</html>
