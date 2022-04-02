@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>JS -Task25</title>
+    <title>JavaScript</title>
     <!-- Google Fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS  -->
@@ -34,6 +34,21 @@
     </div>
 
 
+    <div id="data">
+       
+    </div>
+
+    <section>
+        <form>
+            Name : <input type="text" name="sname" id="sname">
+            <input type="button" name="btn" id="btn" value="submit" onclick="display()">
+        </form>
+    </section>
+    <div>
+        <button type="button" id="myeve">Show Popup</button>
+    </div>
+
+
 
 
 
@@ -42,25 +57,268 @@
 <script>
 // Topics to be covered:
 
-// -> What is Variable?
-// -> Data Types
-// ---> Primitive Data Types
-// ------> number (int, float), text (string), boolean (T,F)
-// --- Composite Data Types
+// 1. What is Variable?
+// 2. Data Types
+// ---> Primitive Data Types --> It holds only single data value
+// ------> number (int, float), text (string), boolean (T,F) 
+// --- Composite Data Types --> Multiple data values
 // ------> Arrays and Objects
-// -> Functions
-// -> DOM
-// --> .innnerHTML, .value. .style
+// 3. Functions
+// 4. DOM --> Document Object Model
+// --> .innnerHTML, .value.,  .style
 // --> Accessing form data using JS
-// -> JS Methods
-// -> loops
-// -> Conditional Flow
-// ---> Ternary Operator
-// ---> If, elseif and else
-// -> Compound Condtional operators
-// -> Events
+// 5. JS Methods
+// 6. Loops
+// 7. Ternary Operator
+// 8. If, elseif and else
+// 9. Compound Condtional operators && ||
+// 10. Events
+
+
+    document.write('<h1>Primitive Data Types</h1>');
+    var age = 22; //int
+    document.write("Age: "+age);
+    document.write('<br>');
+
+    var height = 5/6; //float
+    document.write("Height: "+height);
+    document.write('<br>');
+
+
+    var myUni = "SMIU Karachi"; //string
+    document.write("University: " + myUni);
+    document.write('<br>');
+
+    var switch01 = false; //boolean
+    document.write("Boolean: " + switch01);
+
+    document.write('<h1>Composite Data Types</h1>');
+
+    document.write('<h2>Arrays</h2>');
+    var players = ['Baber Azam', 'Imam Ul Haq', 'Steven Smith', 65, 88, 99.65778, true]; // Array starts with 0 index
+    document.write('Players: ' +players);
+    document.write('<br>');
+    document.write("Index 1:" + players[1]); // Accessing the array elements by index
+    document.write('<br>');
+    document.write('Length of Array: ' + players.length);
+    document.write('<br>');
+    //changing the array values
+    players[0] = "Virat Kohli";
+    document.write("Index 0: " + players[0]);
+    document.write('<br>');
+    document.write('Players: ' +players);
+
+    document.write('<h2>2D Arrays</h2>');
+
+    var array2d = [1,2,3,4,5, ['HTML', 'CSS', 'JS'], ['2HTML', '2CSS', '2JS']];
+    document.write("Array 2D: " + array2d);
+    document.write('<br>');
+    document.write('LAnguages: ' + array2d[5]);
+    document.write('<br>');
+    document.write('Lang: ' + array2d[5][2]);
+
+    //Objects
+    document.write('<h2>Objects</h2>');
+
+    var carData = {
+        name1: 'Mehran',
+        model: 2013,
+        clr: 'white',
+        name2: 'Toyota',
+        name3: 'FX',
+    };
+
+
+    document.write("Object Data: CarName -->  " + carData.name1);
+    document.write('<br>');
+    document.write("Object Data: Model -->  " + carData.model);
+    document.write('<br>');
+    document.write("Object Data: Color -->  " + carData.clr);
+    document.write('<br>');
+    console.log(carData);
+    document.write('<br>');document.write('<br>');document.write('<br>');
+
+
+    document.write('<h2>Functions</h2>');
+
+    // Reusability
+    // Maintain
+    function clientData() {
+        var x = "IBA";
+        document.write("My client name is Marnus Labshuchagne");
+        document.write('<br>');
+        document.write("Country: Pakistan");
+        document.write('<br>');
+        document.write(x);
+        document.write('<br>');
+    }
+
+
+
+    // calling a function 
+    clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+    // clientData();
+
+    // function with return type
+    function calc() {
+        var a = 5;
+        var b = 10;
+        return a + b;
+    }
+
+    var res = calc();
+    document.write("Return Value from function: " + res);
+
+    document.write('<h2>DOM</h2>');
+
+    document.getElementById('data').innerHTML = "<b><i>Pakistan</i><b>";
+    document.getElementById('data').style = "background-color:yellow; color: white";
+
+
+    // accessing the input form values
+
+    function display() {
+        var sname = document.getElementById('sname').value;
+        alert('Good Morning ' + sname);
+        // document.write('Good Morning ' + sname);
+    }
+
+    
+    document.write('<h2>Methods</h2>');
+
+    document.write('PI : ' + Math.PI); // 3.14
+    document.write('<br>');
+    document.write('2^5 : ' + Math.pow(2,5)); //32
+
+    document.write('<br>');
+
+    var ply = ['Baber Azam', 'Imam Ul Haq', 'Steven Smith'];
+
+    document.write("Array: " + ply + "<br>");
+
+    ply.push('HP'); //add
+    document.write("Array: " + ply + "<br>");
+
+    ply.pop('HP')//remove
+    ply.pop('Steven Smith')
+    document.write("Array: " + ply + "<br>");
+
+
+    document.write('<h2>Loops</h2>');
+
+    // Loops
+    // 1. initalization
+    // 2. condition
+    // 3. increment/decrement (update)
+
+    for(var i= 1; i <=10; i= i+1 ) {
+        document.write('i value: '+ i);
+        document.write('<br>');
+    }
+
+    document.write('<h2>Table of 8</h2>');
+
+    for(var tab = 1; tab <=10; tab++) {
+        // 8  x 1 = 8
+        document.write('8 x ' + tab + ' = ' + (tab*8)  + '<br>');
+    }
+    
+
+    document.write('<h2>Table of 12</h2>');
+
+    for(var tab = 1; tab <=10; tab++) {
+        // 8  x 1 = 8
+        document.write('12 x ' + tab + ' = ' + (tab*12)  + '<br>');
+    }
+    
+    for(var d = 50; d > 0; d = d-1) {
+        document.write(d, '<br>')
+    }
+  
+    
+    document.write('<h2>Control Flow</h2>');
+
+    document.write('<h2>Ternary Condition</h2>');
+
+    var dAge = 65;
+
+    var condition = (dAge >=18) ? 'Eligible to Drive' : 'Not Eligibile' ;
+                    // Condition    // True              // False
+
+    document.write(condition);
+
+
+    document.write('<h2>If Elseif else</h2>');
+
+    var grade = 'A';
+
+    if(grade == 'A') {
+        document.write("Congratsulations: You are passed with Grade A");
+    } else if(grade == 'B') {
+        document.write("Congratsulations: You are passed with Grade B");
+    } else {
+        document.write("Bad luck!");
+    }
+
+
+    document.write('<h2>Conditional Compound Operators</h2>');
+    // && ||
+    // && (leftside && rightside) 
+    // || (leftside || rightside) 
+    var y = 2;
+    document.write('<h2>&&</h2>');
+
+    if( y == 2 && 1<2 ) {
+        document.write('Working');
+    } else {
+        document.write('Not Working');
+    }
+
+
+
+    var y = 2;
+    document.write('<h2>||</h2>');
+
+    if( y == 9 || 0>2 ) {
+        document.write('Working');
+    } else {
+        document.write('Not Working');
+    }
+
+
+    document.write('<h2>Events</h2>');
+
+    var z = document.getElementById('myeve'); //selector
+
+    z.addEventListener('click', showPopup); //event
+
+    function showPopup() {          //function
+        alert('Learning JS');
+    }
 
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- BootStrap JS  -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
