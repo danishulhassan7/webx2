@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>MazdoorHaazir | Help Center</title>
+    <title>MazdoorHaazir | Add New Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Mazdoor Haazir is a platform that connects customers to the skilled, experienced and reliable service professionals in their own locality. “Mazdoor Haazir” is the one-stop destination for all areas needs which includes cemetery, concrete laborers at your doorstep." />
@@ -22,25 +22,29 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.3/css/line.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/97acf97beb.js"></script>
     <!-- Main Css -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/xpf.css">
+
 
 </head>
 
 <body>
 
     <!-- Navbar Start -->
-    <header id="topnav" class="defaultscroll sticky">
+    <header id="topnav" class="defaultscroll sticky bg-purple">
         <div class="container">
             <!-- Logo container-->
             <div>
-                <a class="logo" href="index.php" style="text-decoration: none !important;">
+                <a class="logo" href="#" style="text-decoration: none !important;">
                     <img src="img/mh-name.png" height="74" alt=""> <span style="color: #ffa903;"></span>
                 </a>
             </div>
             <div class="complaint-button">
-                <a href="complaints.php" class="btn"
-                    style="background-color: #ffa903; color: #5c0931; font-weight: bold;">Complaints</a>
+                <a href="#" class="btn"
+                    style="background-color: #ffa903; color: #5c0931; font-weight: bold;">Logout</a>
             </div>
             <!--end login button-->
             <!-- End Logo container-->
@@ -61,20 +65,20 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="policy.php">T&C</a></li>
-                    <li><a href="UserLogin.php">Sign Up</a></li>
+                    <li><a href="#" style="color:white !important">My Profile</a></li>
+                    <li><a href="#" style="color:white !important">Dashboard</a></li>
+                    <li><a href="#" class="clr-yellow">Profiles</a></li>
+                    <li><a href="#" style="color:white !important">Categories</a></li>
+                    <li><a href="#" style="color:white !important">Reviews</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="">Manage</a><span class="menu-arrow"></span>
+                        <a href="#" style="color:white !important">Manage</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li class="has-submenu"><a href="dd-account.php"> Account <span
-                                        class="badge badge-pill badge-success">MHP</span></a><span
-                                    class="submenu-arrow"></span>
+                            <li class="has-submenu"><a href="#"> Manage Admins </a><span class="submenu-arrow"></span>
                             </li>
-                            <li class="has-submenu"><a href="dd-help.php" class="clr-yellow"> Help center </a><span class="submenu-arrow"></span>
+                            <li class="has-submenu"><a href="#"> MHP Site <span
+                                        class="badge badge-pill badge-success">Live</span></a><span
+                                    class="submenu-arrow"></span>
                             </li>
                         </ul>
                     </li>
@@ -92,15 +96,66 @@
     <!--end header-->
     <!-- Navbar End -->
 
-    <section class="my-5 py-5">
-        <div class="container pt-2">
+
+    <!-- Dashboard Starts  -->
+    <!-- header  -->
+    <header class="clr-yellow bg-purple py-3">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img src="img/cs.png" alt="coming soon" class="img-fluid img-responsive">
+                <div class="col-md-12">
+                    <h1><i class="fas fa-edit text-primary"></i> Add New Profile</h1>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+    <!-- header ends  -->
+
+    <!-- Main Area  -->
+    <div class="container my-2 mb-4">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-10" style="min-height:400px;">
+                <form action="" method="POST">
+                    <div class="card text-light mb-3">
+                        <div class="card-body custom-style">
+                            <div class="form-group">
+                                <label for="title"><span class="fieldInfo">Title:</span> </label>
+                                <input type="text" class="form-control" id="title" name="PostTitle" placeholder="Type title here">
+                            </div>
+                            <div class="form-group">
+                                <label for="CategoryTitle"><span class="fieldInfo">Choose Category:</span> </label>
+                                <select name="Category" id="CategoryTitle" class="form-control">
+                                    <option> Category 01</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                            <label for="imageSelect"><span class="fieldInfo">Select Image:</span> </label>
+                                <div class="custom-file">
+                                <input type="File" class="custom-file-input" name="Image" id="imageSelect">
+                                <label for="imageSelect" class="custom-file-label">Select Image:</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                            <label for="Post"><span class="fieldInfo">Description:</span> </label>
+                            <textarea name="PostDescription" id="Post" cols="80" rows="8" class="form-control"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 mb-2">
+                                    <a href="#" class="btn btn-warning btn-block"> <i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+                                </div>
+                                <div class="col-lg-6 mb-2">
+                                    <button type="submit" name="Submit" class="btn btn-success btn-block"> 
+                                    <i class="fas fa-check"></i> Publish
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Main Area Ends  -->
+    <!-- Dashboard Ends  -->
 
 
 

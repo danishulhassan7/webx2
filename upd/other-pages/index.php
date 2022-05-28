@@ -44,8 +44,8 @@
                 </a>
             </div>
             <div class="complaint-button">
-                <a href="complaints.php" class="btn"
-                    style="background-color: #ffa903; color: #5c0931; font-weight: bold;">Complaints</a>
+                <a href="Dashboard.php" class="btn"
+                    style="background-color: #ffa903; color: #5c0931; font-weight: bold;">Dashboard</a>
             </div>
             <!--end login button-->
             <!-- End Logo container-->

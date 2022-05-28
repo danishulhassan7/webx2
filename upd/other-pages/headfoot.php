@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>MazdoorHaazir | Help Center</title>
+    <title>MazdoorHaazir | HomePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Mazdoor Haazir is a platform that connects customers to the skilled, experienced and reliable service professionals in their own locality. “Mazdoor Haazir” is the one-stop destination for all areas needs which includes cemetery, concrete laborers at your doorstep." />
@@ -34,12 +34,12 @@
         <div class="container">
             <!-- Logo container-->
             <div>
-                <a class="logo" href="index.php" style="text-decoration: none !important;">
+                <a class="logo" href="#" style="text-decoration: none !important;">
                     <img src="img/mh-name.png" height="74" alt=""> <span style="color: #ffa903;"></span>
                 </a>
             </div>
             <div class="complaint-button">
-                <a href="complaints.php" class="btn"
+                <a href="#" class="btn"
                     style="background-color: #ffa903; color: #5c0931; font-weight: bold;">Complaints</a>
             </div>
             <!--end login button-->
@@ -61,20 +61,24 @@
             <div id="navigation">
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                    <li><a href="policy.php">T&C</a></li>
-                    <li><a href="UserLogin.php">Sign Up</a></li>
+                    <li><a href="#" class="clr-yellow">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">T&C</a></li>
+                    <li><a href="#">Sign Up</a></li>
 
                     <li class="has-submenu">
-                        <a href="#" class="">Manage</a><span class="menu-arrow"></span>
+                        <a href="#">Pages</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li class="has-submenu"><a href="dd-account.php"> Account <span
-                                        class="badge badge-pill badge-success">MHP</span></a><span
+                            <li class="has-submenu"><a href="#"> Company </a><span class="submenu-arrow"></span>
+                            </li>
+                            <li class="has-submenu"><a href="#"> Account </a><span class="submenu-arrow"></span>
+                            </li>
+                            <li class="has-submenu"><a href="#"> Shop <span
+                                        class="badge badge-pill badge-success">Added</span></a><span
                                     class="submenu-arrow"></span>
                             </li>
-                            <li class="has-submenu"><a href="dd-help.php" class="clr-yellow"> Help center </a><span class="submenu-arrow"></span>
+                            <li class="has-submenu"><a href="#"> Help center </a><span class="submenu-arrow"></span>
                             </li>
                         </ul>
                     </li>
@@ -92,15 +96,7 @@
     <!--end header-->
     <!-- Navbar End -->
 
-    <section class="my-5 py-5">
-        <div class="container pt-2">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img src="img/cs.png" alt="coming soon" class="img-fluid img-responsive">
-                </div>
-            </div>
-        </div>
-    </section>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 
 
