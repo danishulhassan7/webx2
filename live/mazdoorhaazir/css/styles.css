@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* scrollbar-width: none; */
+    font-family: 'Poppins', sans-serif;
+    padding-top: 101px;
+    overflow-x: hidden;
+    /* -webkit-scrollbar-display: none; */
+    /* overflow: auto; */
+    /* -ms-overflow-style: none; */
+    /* IE 11 */
+    /* scrollbar-width: none; */
+    /* Firefox 64 */
+}
+
+.navbar {
+    height: 16vh !important;
+    background-color: rgb(8, 7, 82) !important;
+    color: rgb(255, 177, 177) !important;
+    font-size: 14px !important;
+    width: 100%;
+}
+
+.collapse,
+.navbar-collapse,
+.navbar-expand-md,
+.navbar-dark {
+    width: 100% !important;
+    background-color: rgb(8, 7, 82) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.custom-style {
+    color: #5c0931 !important;
+    background-color: #ffa903 !important;
+}
+
+.trendarena {
+    font-size: 165% !important;
+}
+.font-bold {
+    font-weight: bold !important;
+    font-size: 120% !important;
+}
+
+.fa-blog {
+    font-size: 38px;
+    color: rgb(154, 253, 5);
+}
+
+/* .footer {
+    padding-top: 30px;
+    background-color: rgb(8, 7, 82) !important;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+} */
+
+.copyright {
+    margin: 7px 0px !important;
+    background: linear-gradient(rgb(19, 11, 88), rgb(5, 2, 44)) !important;
+    padding: 10px !important;
+    width: 100%;
+    display: block !important;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.bg-warning, .btn-warning {
+    background-color: orangered !important;
+    color: white !important;
+}
+.bg-success, .btn-success {
+    background-color: rgb(4, 61, 33) !important;
+    color: white !important;
+}
+.bg-danger, .btn-danger {
+    background-color: rgb(184, 9, 9) !important;
+    color: white !important;
+}
+/* Categories.php */
+
+.fieldInfo {
+    color: #5c0931 !important;
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.fieldInfo2 {
+    color: rgb(8, 10, 121);
+    font-family: Bitter, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.CommentBlock {
+    padding: 15px 30px;
+    background-color: #f7f6f7;
+    border-radius: 2px;
+}
+
+
+/* Media Queries */
+
+@media (max-width:987px) {}
