@@ -1,0 +1,23 @@
+user
+->get all users
+->post a job
+->all jobs
+->my orders
+->edit profile
+->logout
+
+labour
+->get all jobs
+->apply jobs
+->edit profile
+->add members
+->sign out
+
+order-flow
+->User will create job
+->Labout will apply to the job on applying to job
+->User will get notification
+->User will accept or reject the application
+->On accepting the application, labour will get notification
+->On accepting the application, job will move to accepted state
+->On rejecting the application, job will move to rejected list
